@@ -16,7 +16,7 @@ Testare script-uri cu pytest:
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/127126771/93c8c4ae-5ead-4c95-920f-685b2f8fd4e5)
 
 Creare Pull Request:
-Link PR: https://github.com/andrei162/curs_vcgj_444D_flori/pull/2
+Link PR :  Devel/andrei162 flori #2 : https://github.com/andrei162/curs_vcgj_444D_flori/pull/2
 
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/127126771/cee70124-e9e8-4e65-b629-f58319d80819)
 

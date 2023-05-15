@@ -44,7 +44,7 @@ pipeline {
                 sh '''
                     cd app;
                     . ./activeaza_venv;
-                    pytest;
+                    python3 -m pytest -v;
                 '''
             }
         }

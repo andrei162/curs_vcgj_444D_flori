@@ -1,19 +1,20 @@
 FROM python:3.8-alpine
 
-ENV FLASK_APP curs_vcgj_444D_flori
+ENV FLASK_APP 444D_flori
 #ENV FLASK_CONFIG = docker
 
 #3.8 booster
 #RUN useradd -rm -d /home/site -s /bin/bash -g root -G sudo -u 1001 site
 
 #3.8 alpine
-RUN adduser -D curs_vcgj_444D_flori
+RUN adduser -D 444D_flori
 
-USER curs_vcgj_444D_flori
+USER sysinfo
 
-WORKDIR /home/gitcurs_vcgj_444D_flori/
+WORKDIR /home/git/curs_vcgj_444D_flori
 
 COPY app app
+#COPY dockerstart.sh dockerstart.sh
 
 RUN python -m venv .venv
 RUN .venv/bin/pip install -r app/quickrequirements.txt

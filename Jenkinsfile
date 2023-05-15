@@ -32,7 +32,7 @@ pipeline {
                     pylint --exit-zero tests/*.py;
 
                     echo '\n\nVerificare sysinfo.py cu pylint';
-                    pylint --exit-zero sysinfo.py;
+                    pylint --exit-zero 444D_flori.py;
                 '''
             }
         }

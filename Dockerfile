@@ -11,14 +11,14 @@ RUN adduser -D curs_vcgj_444D_flori
 
 USER curs_vcgj_444D_flori
 
-WORKDIR /home/curs_vcgj_444D_flori/
+WORKDIR /home/gitcurs_vcgj_444D_flori/
 
 COPY app app
 
 RUN python -m venv .venv
 RUN .venv/bin/pip install -r app/quickrequirements.txt
 
-WORKDIR /home/curs_vcgj_444D_flori/app
+WORKDIR /home/git/curs_vcgj_444D_flori/app
 
 # runtime configuration
 EXPOSE 5011

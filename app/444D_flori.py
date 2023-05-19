@@ -11,7 +11,7 @@ def index():
     ret = "<h1></h1>Informatii despre flori 444D</h1>"
     return ret
     
-    @app.route("/crin/", methods=['GET'])
+@app.route("/crin/", methods=['GET'])
 def get_crin():
     ret = "<h1>Crin<h1>"
     ret += "Culoare: "

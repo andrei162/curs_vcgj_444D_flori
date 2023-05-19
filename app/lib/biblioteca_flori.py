@@ -1,11 +1,11 @@
-def culoare_crin():
-    return("alb")
+def culoare_bonsai():
+    return("roz")
    
     
-def anotimp_crin():
-    return("vara")
+def anotimp_bonsai():
+    return("primavara")
     
-def clasificare_crin():
-    return("toxic")
+def clasificare_bonsai():
+    return("infrumusetare")
     
 

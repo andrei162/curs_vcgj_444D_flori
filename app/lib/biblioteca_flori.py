@@ -8,4 +8,14 @@ def anotimp_crin():
 def clasificare_crin():
     return("toxic")
     
+    
+def culoare_liliac():
+    return("mov")
+   
+    
+def anotimp_liliac():
+    return("primavara")
+    
+def clasificare_liliac():
+    return("toxic")
 

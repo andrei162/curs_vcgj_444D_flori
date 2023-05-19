@@ -21,3 +21,30 @@ def test_clasificare_crin():
         assert True
     else: 
         assert False
+        
+        
+        
+        
+        
+
+def test_culoare_liliac():
+    cul = bflori.culoare_liliac()
+    if cul == "mov" : 
+        assert True
+    else: 
+        assert False
+        
+
+def test_anotimp_liliac():
+    cul = bflori.anotimp_liliac()
+    if cul == "primavara" :
+        assert True
+    else: 
+        assert False
+
+def test_clasificare_liliac():
+    cul = bflori.clasificare_liliac()
+    if cul == "toxic" :
+        assert True
+    else: 
+        assert False

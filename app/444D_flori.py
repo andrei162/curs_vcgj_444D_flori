@@ -49,5 +49,45 @@ def ia_clasificare_crin():
     
     return ret
     
+@app.route("/liliac/", methods=['GET'])
+def get_liliac():
+    ret = "<h1>Liliac<h1>"
+    ret += "Culoare: "
+    ret += lib.biblioteca_flori.culoare_liliac()
+    ret += "<br>"
+    
+    ret += "Anotimp: "
+    ret += lib.biblioteca_flori.anotimp_liliac()
+    ret += "<br>"
+    
+    ret += "Clasificare: "
+    ret += lib.biblioteca_flori.clasificare_liliac()
+    ret += "<br>"
+    
+    return ret
+    
+@app.route("/liliac/culoare", methods=['GET'])
+def ia_culoare_liliac():
+    ret = ""
+    ret += lib.biblioteca_flori.culoare_liliac()
+    
+    return ret
+    
+@app.route("/liliac/anotimp", methods=['GET'])
+def ia_anotimp_liliac():
+    ret = ""
+    ret += lib.biblioteca_flori.anotimp_liliac()
+    
+    return ret
+    
+@app.route("/liliac/clasificare", methods=['GET'])
+def ia_clasificare_liliac():
+    ret = ""
+    ret += lib.biblioteca_flori.clasificare_liliac()
+    
+    return ret
+    
     
 app.run(host = "127.0.0.1", port = 5001)
+
+

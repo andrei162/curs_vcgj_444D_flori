@@ -9,7 +9,7 @@ ENV FLASK_APP 444D_flori
 #3.8 alpine
 RUN adduser -D 444D_flori
 
-USER sysinfo
+USER 444D_flori
 
 WORKDIR /home/git/curs_vcgj_444D_flori
 

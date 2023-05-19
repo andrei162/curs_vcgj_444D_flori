@@ -88,4 +88,4 @@ def ia_clasificare_camelie():
     return ret
     
     
-app.run(host = "127.0.0.1", port = 5001)
+#app.run(host = "127.0.0.1", port = 5001)

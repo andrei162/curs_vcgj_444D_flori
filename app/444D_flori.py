@@ -49,5 +49,43 @@ def ia_clasificare_crin():
     
     return ret
     
+@app.route("/trandafir/", methods=['GET'])
+def get_trandafir():
+    ret = "<h1>trandafir<h1>"
+    ret += "Culoare: "
+    ret += lib.biblioteca_flori.culoare_trandafir()
+    ret += "<br>"
+    
+    ret += "Anotimp: "
+    ret += lib.biblioteca_flori.anotimp_trandafir()
+    ret += "<br>"
+    
+    ret += "Clasificare: "
+    ret += lib.biblioteca_flori.clasificare_trandafir()
+    ret += "<br>"
+    
+    return ret
+    
+@app.route("/trandafir/culoare", methods=['GET'])
+def ia_culoare_trandafir():
+    ret = ""
+    ret += lib.biblioteca_flori.culoare_trandafir()
+    
+    return ret
+    
+@app.route("/trandafir/anotimp", methods=['GET'])
+def ia_anotimp_trandafir():
+    ret = ""
+    ret += lib.biblioteca_flori.anotimp_trandafir()
+    
+    return ret
+    
+@app.route("/trandafir/clasificare", methods=['GET'])
+def ia_clasificare_trandafir():
+    ret = ""
+    ret += lib.biblioteca_flori.clasificare_trandafir()
+    
+    return ret
+    
     
 app.run(host = "127.0.0.1", port = 5001)

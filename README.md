@@ -115,5 +115,4 @@ Cu *git status* am verificat ce fisiere se afla in staging si ce fisiere au modi
 
 In final am facut un pull request:
 
-
-
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/82381145/a0e87d07-29cf-48fb-a195-c6f29bd009b7)

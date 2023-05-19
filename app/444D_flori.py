@@ -48,6 +48,44 @@ def ia_clasificare_crin():
     ret += lib.biblioteca_flori.clasificare_crin()
     
     return ret
+
+@app.route("/camelie/", methods=['GET'])
+def get_camelie():
+    ret = "<h1>Camelie<h1>"
+    ret += "Culoare: "
+    ret += lib.biblioteca_flori.culoare_camelie()
+    ret += "<br>"
+    
+    ret += "Anotimp: "
+    ret += lib.biblioteca_flori.anotimp_camelie()
+    ret += "<br>"
+    
+    ret += "Clasificare: "
+    ret += lib.biblioteca_flori.clasificare_camelie()
+    ret += "<br>"
+    
+    return ret
+    
+@app.route("/camelie/culoare", methods=['GET'])
+def ia_culoare_camelie():
+    ret = ""
+    ret += lib.biblioteca_flori.culoare_camelie()
+    
+    return ret
+    
+@app.route("/camelie/anotimp", methods=['GET'])
+def ia_anotimp_camelie():
+    ret = ""
+    ret += lib.biblioteca_flori.anotimp_camelie()
+    
+    return ret
+    
+@app.route("/camelie/clasificare", methods=['GET'])
+def ia_clasificare_camelie():
+    ret = ""
+    ret += lib.biblioteca_flori.clasificare_camelie()
+    
+    return ret
     
     
 app.run(host = "127.0.0.1", port = 5001)

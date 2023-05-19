@@ -49,5 +49,43 @@ def ia_clasificare_crin():
     
     return ret
     
+@app.route("/bujor/", methods=['GET'])
+def get_bujor():
+    ret = "<h1>Bujor<h1>"
+    ret += "Culoare: "
+    ret += lib.biblioteca_flori.culoare_bujor()
+    ret += "<br>"
+    
+    ret += "Anotimp: "
+    ret += lib.biblioteca_flori.anotimp_bujor()
+    ret += "<br>"
+    
+    ret += "Clasificare: "
+    ret += lib.biblioteca_flori.clasificare_bujor()
+    ret += "<br>"
+    
+    return ret
+    
+@app.route("/bujor/culoare", methods=['GET'])
+def ia_culoare_bujor():
+    ret = ""
+    ret += lib.biblioteca_flori.culoare_bujor()
+    
+    return ret
+    
+@app.route("/bujor/anotimp", methods=['GET'])
+def ia_anotimp_bujor():
+    ret = ""
+    ret += lib.biblioteca_flori.anotimp_bujor()
+    
+    return ret
+    
+@app.route("/bujor/clasificare", methods=['GET'])
+def ia_clasificare_bujor():
+    ret = ""
+    ret += lib.biblioteca_flori.clasificare_bujor()
+    
+    return ret
+    
     
 app.run(host = "127.0.0.1", port = 5001)

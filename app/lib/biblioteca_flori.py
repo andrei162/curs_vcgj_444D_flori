@@ -8,4 +8,13 @@ def anotimp_crin():
 def clasificare_crin():
     return("toxic")
     
-
+def culoare_bujor():
+    return("rosie")
+   
+    
+def anotimp_bujor():
+    return("primavara")
+    
+def clasificare_bujor():
+    return("parfumat")
+    

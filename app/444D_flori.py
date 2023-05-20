@@ -49,5 +49,43 @@ def ia_clasificare_crin():
     
     return ret
     
+@app.route("/ghiocel/", methods=['GET'])
+def get_ghiocel():
+    ret = "<h1>ghiocel<h1>"
+    ret += "Culoare: "
+    ret += lib.biblioteca_flori.culoare_ghiocel()
+    ret += "<br>"
+    
+    ret += "Anotimp: "
+    ret += lib.biblioteca_flori.anotimp_ghiocel()
+    ret += "<br>"
+    
+    ret += "Clasificare: "
+    ret += lib.biblioteca_flori.clasificare_ghiocel()
+    ret += "<br>"
+    
+    return ret
+    
+@app.route("/ghiocel/culoare", methods=['GET'])
+def ia_culoare_ghiocel():
+    ret = ""
+    ret += lib.biblioteca_flori.culoare_ghiocel()
+    
+    return ret
+    
+@app.route("/ghiocel/anotimp", methods=['GET'])
+def ia_anotimp_ghiocel():
+    ret = ""
+    ret += lib.biblioteca_flori.anotimp_ghiocel()
+    
+    return ret
+    
+@app.route("/ghiocel/clasificare", methods=['GET'])
+def ia_clasificare_ghiocel():
+    ret = ""
+    ret += lib.biblioteca_flori.clasificare_ghiocel()
+    
+    return ret
+    
     
 app.run(host = "127.0.0.1", port = 5001)

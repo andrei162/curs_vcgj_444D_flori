@@ -21,3 +21,26 @@ def test_clasificare_crin():
         assert True
     else: 
         assert False
+        
+        
+def test_culoare_ghiocel():
+    cul = bflori.culoare_ghiocel()
+    if cul == "alb" : 
+        assert True
+    else: 
+        assert False
+        
+
+def test_anotimp_ghiocel():
+    cul = bflori.anotimp_ghiocel()
+    if cul == "primavara" :
+        assert True
+    else: 
+        assert False
+
+def test_clasificare_ghiocel():
+    cul = bflori.clasificare_ghiocel()
+    if cul == "parfumat" :
+        assert True
+    else: 
+        assert False        

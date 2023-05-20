@@ -18,7 +18,10 @@ La sfarsitul codului in Python, pentru a rula site-ul pe localhost, vom folosi :
 app.run(host = "127.0.0.1", port = 5001) Acum vom putea porni programul 444D_flori.py din directorul /app astfel: $python3 444D_flori.py Programul va porni pe masina locala, putem accesa link-ul 127.0.0.1 :5001 SAU localhost :5001 si ne va duce pe o pagina simpla, cu un text, iar dac ape langa acest link mai punem si /lalea ne va duce catre alta pagina unde avem toate functiile cu return-urile respective.
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/128401623/f3f0ca79-ad10-4cb4-b1de-1cff4ef543f0)
 
+! Urcarea fisierelor in serverul github am facut-o putin mai jos, la partea de jenkins
 
+
+JENKINS
 
 Pentru partea de Jenkins am creat fisierele Jenkinsfile activeaza_venv si activeaza_venv_jenkins si am atasat codurile ca atare.
 

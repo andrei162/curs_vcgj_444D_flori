@@ -8,4 +8,14 @@ def anotimp_crin():
 def clasificare_crin():
     return("toxic")
     
+    
+def culoare_narcisa():
+    return("alb")
+   
+    
+def anotimp_narcisa():
+    return("primavara")
+    
+def clasificare_narcisa():
+    return("frumoasa")
 

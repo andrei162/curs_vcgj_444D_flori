@@ -21,3 +21,25 @@ def test_clasificare_crin():
         assert True
     else: 
         assert False
+        
+def test_culoare_camelie():
+    cul = bflori.culoare_camelie()
+    if cul == "roz" : 
+        assert True
+    else: 
+        assert False
+        
+
+def test_anotimp_camelie():
+    cul = bflori.anotimp_camelie()
+    if cul == "primavara" :
+        assert True
+    else: 
+        assert False
+
+def test_clasificare_camelie():
+    cul = bflori.clasificare_camelie()
+    if cul == "Camellia Japonica" :
+        assert True
+    else: 
+        assert False

@@ -8,4 +8,12 @@ def anotimp_crin():
 def clasificare_crin():
     return("toxic")
     
-
+def culoare_camelie():
+    return("roz")
+   
+    
+def anotimp_camelie():
+    return("primavara")
+    
+def clasificare_camelie():
+    return("Camellia Japonica")

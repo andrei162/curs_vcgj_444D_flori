@@ -51,7 +51,7 @@ def ia_clasificare_crin():
     
 @app.route("/floaredecolt/", methods=['GET'])
 def get_floaredecolt():
-    ret = "<h1>Crin<h1>"
+    ret = "<h1>Floare de Colt<h1>"
     ret += "Culoare: "
     ret += lib.biblioteca_flori.culoare_floaredecolt()
     ret += "<br>"

@@ -14,7 +14,13 @@ In git/curs_vcgj_444D_flori/app/lib am madaugat in fisierul biblioteca_flori.py 
 In git/curs_vcgj_444D_flori/app am rulat si testat codul din 444D_flori.py
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/128401623/14d9299f-f6b4-4372-aa98-d97c4b459468)
 
-Pnetru partea de Jenkins am creat fisierele Jenkinsfile activeaza_venv si activeaza_venv_jenkins si am atasat codurile ca atare.
+La sfarsitul codului in Python, pentru a rula site-ul pe localhost, vom folosi : 
+app.run(host = "127.0.0.1", port = 5001) Acum vom putea porni programul 444D_flori.py din directorul /app astfel: $python3 444D_flori.py Programul va porni pe masina locala, putem accesa link-ul 127.0.0.1 :5001 SAU localhost :5001 si ne va duce pe o pagina simpla, cu un text, iar dac ape langa acest link mai punem si /lalea ne va duce catre alta pagina unde avem toate functiile cu return-urile respective.
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/128401623/f3f0ca79-ad10-4cb4-b1de-1cff4ef543f0)
+
+
+
+Pentru partea de Jenkins am creat fisierele Jenkinsfile activeaza_venv si activeaza_venv_jenkins si am atasat codurile ca atare.
 
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/128401623/15acc269-43a2-4e9c-b6ee-b16529785370)
 
@@ -31,6 +37,11 @@ Apoi am mutat fisierele pe serverul de stage cu comenzile add si commit .
 Inainte de a face push la aceste fisiere comise am vrut sa imi salvez credentialele in cazul in care trebuie sa urc si alte fisiere in serverul de github in viitor.
 
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/128401623/1ac687ad-6456-444d-9ec8-26e82afc67e1)
+
+-venv 
+-pylint
+
+
 
 
 

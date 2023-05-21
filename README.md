@@ -89,19 +89,36 @@ In browser, pe Jenkins – configuram Jenkins-ul astfel incat sa folosim un plug
 Containerizare cu Docker
 
 Pentru containerizare folosim serviciile Docker – punem aplicatia cu toate dependintele si virtual environment pentru a putea rula intr-o « cutie » si nu pe masina noastra locala.
-Pentru inceput, instalam docker :
+Pentru inceput, instalam docker:
 
 1.sudo apt-get update 
 2.sudo apt-get install ca-certificates curl gnupg lsb-release
 3.sudo mkdir -p /etc/apy/keyrings 4.curl -fsSL | sudo gpg –dearmor -o /etc/apy/keyrings/docker.gpg 
 4.echo “deb [arch=$(dpkg –print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] $(lsb_release -cs) stable”| sudo tee /etc/apt/sources.list.d/docker.list > /dev/null 
 5.sudo apt-get update 
-6.sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-compose Pentru a face acest lucru avem nevoie de un Dockerfile, o imagine cu nume – 444D_flori, un fisier pentru a porni serviciul docker – dockerstart.sh Continut repository :
+6.sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-compose Pentru a face acest lucru avem nevoie de un Dockerfile, o imagine cu nume – 444D_flori, un fisier pentru a porni serviciul docker – dockerstart.sh Continut repository:
 
-Dockerfile pentru aplicatie Flask in Python 3 :
-![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/132925764/046ae713-d00a-413f-94ce-45226d08bac4)
+Dockerfile pentru aplicatie Flask in Python 3:
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/132925764/5d473db8-e074-4418-9e71-99d4ebe0fbf9)
 
-Continut /app :
+Continut /app:
 
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/132925764/adc8fa2e-9608-4c36-a335-d2bfe9a26422)
 
+Dockerstart.sh:
 
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/132925764/8833e8cc-7bc0-4b0f-91c7-ab2758c671eb)
+
+Cu ajutorul comenzii de mai jos putem sa cream imaginea:
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/132925764/231cbd64-6db0-4389-8cf2-242379e4194a)
+
+Aceasta imagine se poate vedea utilizand urmatoarea comanda:
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/132925764/67d1c43d-3e25-4de5-bbd1-87f3bb878111)
+
+Pentru a rula containerul pe Docker, folosim comanda :
+
+$sudo docker run --name 444D_flori -p 8020:5001 444d_flori:v01 8020 – portul de pe masina locala unde va raspunde serverul din docker 5001 – portul din interiorul containerului 444d_flori – numele containerului 444D_flori – numele repository-ului :v01 – versiunea pentru container
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/132925764/efebe623-f7f1-4721-a3bb-c36e0c115eea)

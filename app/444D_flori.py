@@ -48,6 +48,43 @@ def ia_clasificare_crin():
     ret += lib.biblioteca_flori.clasificare_crin()
     
     return ret
+@app.route("/zambila/", methods=['GET'])
+def get_crin():
+    ret = "<h1>Zambila<h1>"
+    ret += "Culoare: "
+    ret += lib.biblioteca_flori.culoare_zambila()
+    ret += "<br>"
+    
+    ret += "Anotimp: "
+    ret += lib.biblioteca_flori.anotimp_zambila()
+    ret += "<br>"
+    
+    ret += "Clasificare: "
+    ret += lib.biblioteca_flori.clasificare_zambila()
+    ret += "<br>"
+    
+    return ret
+    
+@app.route("/zambila/culoare", methods=['GET'])
+def ia_culoare_crin():
+    ret = ""
+    ret += lib.biblioteca_flori.culoare_crin()
+    
+    return ret
+    
+@app.route("/zambila/anotimp", methods=['GET'])
+def ia_anotimp_zambila():
+    ret = ""
+    ret += lib.biblioteca_flori.anotimp_zambila()
+    
+    return ret
+    
+@app.route("/zambila/clasificare", methods=['GET'])
+def ia_clasificare_zambila():
+    ret = ""
+    ret += lib.biblioteca_flori.clasificare_zambila()
+    
+    return ret
     
     
 app.run(host = "127.0.0.1", port = 5001)

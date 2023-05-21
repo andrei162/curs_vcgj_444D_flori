@@ -9,8 +9,10 @@ Folosim iarasi comanda sudo apt-get update pentru a updata lista astfel incat sa
 Prin comanda sudo chmod 777 /etc/apt/keyrings/docker.gpg obtinem permisiunea ca fisierul docker.gpg sa poata fi citit, scris si executat
 Cu comanda sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-compose se instaleaza Docker-ul si pachetele sale: docker-ce, docker-ce-cli, containerd.io, docker-compose-plugin, and docker-compose
 Se creeaza cu comanda touch Dockerfile un fisier gol cu numele Dockerfile pe care il punem deschide pentru a edita cu comanda gedit Dockerfile:
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93121932/c1fd8e0c-920b-4a7d-a970-4c9cbeaf151e)
+
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93121932/5f18fbbb-69cd-4725-a467-af7a5a09c09b)
-![Uploading image.png…]()
+
 
 
 

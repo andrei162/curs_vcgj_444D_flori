@@ -17,6 +17,10 @@ Cream fisierul biblioteca_flori.py cu touch, copiem continutul folosindu-ne de g
 La fel si pentru fisierele Jenkinsfile, afiseaza_venv, afiseaza_venv_jenkins si ruleaza_aplicatia:
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93121932/cd6e1ea2-0903-4ffb-acd0-0cfe5ee4b9d0)
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93121932/bc515ccb-69d8-47ad-9e11-cb5eee2b9e53)
+Se creeaza un fisier de tip python, 444D_flori.py unde adaugam cpd pentru floarea aleasa:
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93121932/2f587328-ec7e-47c9-8c4a-a5aec7ba9829)
+Aplicatia ruleaza la portul 5001 la adresa IP 127.0.0.1. Accesam prin browser http://127.0.0.1:5001/bujor/ dupa ce am dat comanda in Terminal :
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93121932/6ab9459b-edd1-4753-8b73-2ea7ec687586)
 
 
 

@@ -11,7 +11,12 @@ Si tot cu comanda ls -la data in directorul app vedem:
 
 Pentru floarea aleasa de mine,"bujor", este nevoie de cele 3 functii bujor_culoare() care trebuie sa afiseze "Rosu", bujor_anotimp() afiseaza "primavara" si bujor_clasificare() care afiseaza "parfumat"
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93121932/5c377840-c963-48ba-84a1-0159040ec0bb)
-
+Cum se observa in imaginea de mai sus, in directorul lib se va regasi bibioteca care va descrie functiile de mai sus.
+Cream fisierul biblioteca_flori.py cu touch, copiem continutul folosindu-ne de gedit si salvam.
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93121932/2b3ff1ab-a53b-4a5b-9247-1b8973c8b2b1)
+La fel si pentru fisierele Jenkinsfile, afiseaza_venv, afiseaza_venv_jenkins si ruleaza_aplicatia:
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93121932/cd6e1ea2-0903-4ffb-acd0-0cfe5ee4b9d0)
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93121932/bc515ccb-69d8-47ad-9e11-cb5eee2b9e53)
 
 
 

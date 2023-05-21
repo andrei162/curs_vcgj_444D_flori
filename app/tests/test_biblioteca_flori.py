@@ -21,3 +21,25 @@ def test_clasificare_crin():
         assert True
     else: 
         assert False
+        
+def test_culoare_lavanda():
+    cul = bflori.culoare_lavanda()
+    if cul == "violet" : 
+        assert True
+    else: 
+        assert False
+        
+
+def test_anotimp_lavanda():
+    cul = bflori.anotimp_lavanda()
+    if cul == "vara" :
+        assert True
+    else: 
+        assert False
+
+def test_clasificare_lavanda():
+    cul = bflori.clasificare_lavanda()
+    if cul == "terapeutic" :
+        assert True
+    else: 
+        assert False

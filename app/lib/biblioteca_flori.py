@@ -8,4 +8,12 @@ def anotimp_crin():
 def clasificare_crin():
     return("toxic")
     
-
+def culoare_lavanda():
+    return("violet")
+   
+    
+def anotimp_lavanda():
+    return("vara")
+    
+def clasificare_lavanda():
+    return("terapeutic")

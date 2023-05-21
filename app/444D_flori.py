@@ -49,5 +49,42 @@ def ia_clasificare_crin():
     
     return ret
     
+@app.route("/lavanda/", methods=['GET'])  
+def get_lavanda():
+    ret = "<h1>Lavanda<h1>"
+    ret += "Culoare: "
+    ret += lib.biblioteca_flori.culoare_lavanda()
+    ret += "<br>"
+    
+    ret += "Anotimp: "
+    ret += lib.biblioteca_flori.anotimp_lavanda()
+    ret += "<br>"
+    
+    ret += "Clasificare: "
+    ret += lib.biblioteca_flori.clasificare_lavanda()
+    ret += "<br>"
+    
+    return ret
+    
+@app.route("/lavanda/culoare", methods=['GET'])
+def ia_culoare_lavanda():
+    ret = ""
+    ret += lib.biblioteca_flori.culoare_lavanda()
+    
+    return ret
+    
+@app.route("/lavanda/anotimp", methods=['GET'])
+def ia_anotimp_lavanda():
+    ret = ""
+    ret += lib.biblioteca_flori.anotimp_lavanda()
+    
+    return ret
+    
+@app.route("/lavanda/clasificare", methods=['GET'])
+def ia_clasificare_lavanda():
+    ret = ""
+    ret += lib.biblioteca_flori.clasificare_lavanda()
+    
+    return ret
     
 app.run(host = "127.0.0.1", port = 5001)

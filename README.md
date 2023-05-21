@@ -21,7 +21,7 @@ Se creeaza un fisier de tip python, 444D_flori.py unde adaugam cpd pentru floare
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93121932/2f587328-ec7e-47c9-8c4a-a5aec7ba9829)
 Aplicatia ruleaza la portul 5001 la adresa IP 127.0.0.1. Accesam prin browser http://127.0.0.1:5001/bujor/ dupa ce am dat comanda in Terminal :
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93121932/6ab9459b-edd1-4753-8b73-2ea7ec687586)
-
+In continuare, se creeaza un nou alt director cu numele tests unde vom crea testul pentru biblioteca noastra. Testul consta in mai multe functii pentru culoare, anotimp si clasificare pe care biblioteca_flori trebuie sa le treaca:
 
 
 

@@ -11,7 +11,21 @@ Cu comanda sudo apt-get install docker-ce docker-ce-cli containerd.io docker-com
 Se creeaza cu comanda touch Dockerfile un fisier gol cu numele Dockerfile pe care il punem deschide pentru a edita cu comanda gedit Dockerfile:
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93121932/c1fd8e0c-920b-4a7d-a970-4c9cbeaf151e)
 
+
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93121932/5f18fbbb-69cd-4725-a467-af7a5a09c09b)
+
+Cu change directory trecem in app directory unde se va crea un fisier gol quickrequirements.txt .
+cd app
+touch quickrequirements.txt
+gedit quickrequirements.txt -> comanda cu care deschidem si editam fisierul quickrequirements.txt :
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93121932/19fa2312-e94a-4f27-97a2-c886a2eac305)
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93121932/e98d2f3c-4ed1-42d9-9a3f-10579e7a6c53)
+
+La fel si pentru dockerstart.sh: 
+touch dockerstart.sh
+gedit dockerstart.sh
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93121932/0646e6bf-47c3-44df-8327-c4edd766091e)
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93121932/2695ead9-1aed-4d87-83c7-5e02568f77cc)
 
 
 

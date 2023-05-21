@@ -52,6 +52,8 @@ Am creat Jenkinsfile unde am adaugat urmatoarele :
 
 L-am verificat si in ocean blue utilizand jenkins
 
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/f1ae3ffa-7468-4203-8da8-b5d062902d4e)
+
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/0c3f165e-4521-4879-bc54-c879cac66bc4)
 
 Am incercat sa fac push pe git insa am intampinat urmatoarea eroare 
@@ -61,6 +63,48 @@ Am incercat sa fac push pe git insa am intampinat urmatoarea eroare
 Aceasta s-a rezolvat cu urmatoarea secventa de cod 
 
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/f89e7150-3da4-4141-870d-b5be331d60f0)
+
+Am instalat python3-venv pentru a putea rula aplicatia 
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/0cc69049-255c-48bc-8c63-d0f8007e2193)
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/1380cb6a-0e59-4015-a9ac-007480445b43)
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/7791d090-8f16-40ef-8326-21ed5d48f443)
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/c8a0fcef-552f-44b9-ae2b-72ff2c28a4a4)
+
+Apoi m-am ocupat de fisierele docker 
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/93ef453a-600d-439c-bf25-d96d3dbfa8b0)
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/e4aed497-aa3a-46e2-82b5-1a56f5b4d728)
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/0bc60bcf-eba9-4ba7-8ae9-903bf56127da)
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/0ca5abdf-e891-4491-b162-bdafd70061ee)
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/f5d90e22-6847-4f3f-9eb3-0bebed828414)
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/6c8df1f1-27e1-49da-9ae4-6beb8c72c646)
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/025f628f-4bc5-49ad-a156-67991f70aecd)
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/e4b595f6-d787-43d4-8927-278cbf11ef78)
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/720fb101-15fd-4afb-9542-2cbcad5b5edd)
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/68970f84-cd4d-4ff9-b0ec-80ddcb30cf59)
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/f8f4f78d-0df4-4316-aa48-e9e6c3f750f6)
+
+Aici putem observa cum hostul 8020 functioneaza pentru floarea Orhidee
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/9bae9072-b757-4df5-a8a1-e5ac6e7b7759)
+
+
+
+
 
 
 

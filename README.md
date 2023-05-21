@@ -1,6 +1,20 @@
 # curs_vcgj_444D_flori
 Mentionez de la inceput ca mie mi s-a inchis terminalul si singura metoda de a recupera ce am facut este folosind comanda history
 Voi adauga doar cod si ulterior voi reface anumite parti in terminal.
+Trebuie sa avem instalate mai multe programe cu comanda sudo apt install dar mai intai, pentru a crea acest proiect, avem nevoie de un director pe Ubuntu. Folosim comanda mkdir dir-local GIT,pentru a crea directorul in care vom incarca de pe GitHub un repository creat de noi din contul de GitHub. Cu git status verificam starea directorului.
+Cu comanda ls -la data in directorul curs_vcgj_444D_flori vedem:
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93121932/eaafa8d3-b750-46eb-8f77-49ab1221ad91)
+Si tot cu comanda ls -la data in directorul app vedem:
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93121932/8a75a6b8-f253-407e-8d0d-4cf0aa8aa27b)
+
+
+
+
+
+
+
+
+
 Pentru curs_vcj_44D_flori/, folosim comanda  sudo apt-get update pentru a pune la dispozitie ultimele informatii din repository -urile configurate si comanda  sudo apt-get install ca-certificates curl gnupg lsb-release care instaleaza ce a fost specificat :ca-certificates, curl, gnupg, lsb-released folosind apt-get(manager pentru package)
 Docker download:
 Se descarca cheia GPG pentru repository-ul Docker si se salveaza ca un fisier docker.gpg intr-un directory folosind comanda: curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg.
@@ -26,7 +40,15 @@ touch dockerstart.sh
 gedit dockerstart.sh
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93121932/0646e6bf-47c3-44df-8327-c4edd766091e)
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93121932/2695ead9-1aed-4d87-83c7-5e02568f77cc)
+Pasul urmator, dupa ce ajungem in directorul parinte, este sa definim o imagine Docker cu numele 444d-flori:v01 (d-ul este mic intrucat face parte din denumirea unei imagini) folosindu-ne de Dockerfile : sudo docker build -t 444d_flori:v01 .
+Intram in directorul app si activam cu comanda source activeaza_venv, mediul activeaza_venv ale carui variabile vor fi disponibile.
+Se defineste inca o imagine ca cea de mai sus cu aceeasi comanda.
+Cu comanda sudo docker images se vor afisa toate imaginile Docker disponibile in sistem iar cu comanda sudo docker ps -a  vom afisa lista cu containerele Docker.
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93121932/fa666c2f-b9ac-48a8-835f-2ce248bf9b61)
 
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93121932/76a41abc-13e2-4b38-aa13-3966cc431696)
 
+sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 -> ruleaza  container-ul 444d_flori si asociaza port-ul 5020 cu portul 8020. 
+In continuare se vor afisa absolut toate containerele Docker: sudo docker ps -a.
 
 

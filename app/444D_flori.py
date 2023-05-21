@@ -49,7 +49,7 @@ def ia_clasificare_crin():
     
     return ret
     
- @app.route("/hortensie/", methods=['GET'])
+@app.route("/hortensie/", methods=['GET'])
 def get_hortensie():
     ret = "<h1>Hortensie<h1>"
     ret += "Culoare: "

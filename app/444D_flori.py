@@ -49,5 +49,41 @@ def ia_clasificare_crin():
     
     return ret
     
+ @app.route("/hortensie/", methods=['GET'])
+def get_hortensie():
+    ret = "<h1>Hortensie<h1>"
+    ret += "Culoare: "
+    ret += lib.biblioteca_flori.culoare_hortensie()
+    ret += "<br>"
     
+    ret += "Anotimp: "
+    ret += lib.biblioteca_flori.anotimp_hortensie()
+    ret += "<br>"
+    
+    ret += "Clasificare: "
+    ret += lib.biblioteca_flori.clasificare_hortensie()
+    ret += "<br>"
+    
+    return ret
+    
+@app.route("/hortensie/culoare", methods=['GET'])
+def ia_culoare_hortensie():
+    ret = ""
+    ret += lib.biblioteca_flori.culoare_hortensie()
+    
+    return ret
+    
+@app.route("/hortensie/anotimp", methods=['GET'])
+def ia_anotimp_hortensie():
+    ret = ""
+    ret += lib.biblioteca_flori.anotimp_hortensie()
+    
+    return ret
+    
+@app.route("/hortensie/clasificare", methods=['GET'])
+def ia_clasificare_hortensie():
+    ret = ""
+    ret += lib.biblioteca_flori.clasificare_hortensie()
+    
+    return ret   
 app.run(host = "127.0.0.1", port = 5001)

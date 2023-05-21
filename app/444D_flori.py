@@ -49,5 +49,44 @@ def ia_clasificare_crin():
     
     return ret
     
+@app.route("/lalea/", methods=['GET'])
+def get_lalea():
+	ret = "<h1>Lalea<h1>"
+	ret += "Culoare: "
+	ret += lib.biblioteca_flori.culoare_lalea()
+	ret += "<br>"
+	
+	ret += "Anotimp: "
+	ret += lib.biblioteca_flori.anotimp_lalea()
+	ret += "<br>"
     
-app.run(host = "127.0.0.1", port = 5001)
+	ret += "Clasificare: "
+	ret += lib.biblioteca_flori.clasificare_lalea()
+	ret += "<br>"
+	
+	return ret
+    
+@app.route("/lalea/culoare", methods=['GET'])
+def ia_culoare_lalea():
+	ret = ""
+	ret += lib.biblioteca_flori.culoare_lalea()
+    
+	return ret
+    
+@app.route("/lalea/anotimp", methods=['GET'])
+def ia_anotimp_lalea():
+	ret = ""
+	ret += lib.biblioteca_flori.anotimp_lalea()
+    
+	return ret
+    
+@app.route("/lalea/clasificare", methods=['GET'])
+def ia_clasificare_lalea():
+	ret = ""
+	ret += lib.biblioteca_flori.clasificare_lalea()
+    
+	return ret    
+    
+    
+    
+#app.run(host = "127.0.0.1", port = 5001)

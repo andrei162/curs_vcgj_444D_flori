@@ -102,6 +102,13 @@ Aici putem observa cum hostul 8020 functioneaza pentru floarea Orhidee
 
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/9bae9072-b757-4df5-a8a1-e5ac6e7b7759)
 
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/1f9a5768-66ae-4367-abff-125819f8b023)
+
+Pentru a porni din nou serverul trebuie sa stergem containerul si sa cream unul nou 
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/57762c92-048c-4c3c-9e52-2ab704da4777)
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/3af594bd-82dd-4d45-9e99-c546ba091835)
 
 
 

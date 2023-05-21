@@ -8,6 +8,7 @@ Dupa ce am verificat ca totul este in regula, am conectat GitHub si am dat push 
 In continuare am instalat Jenkins pentru testare. Am facut cont pe site-ul acestuia si am instalat Blue Ocean. Pentru testare in pipeline Jenkins am folosit un mediu virtual(venv) si flask.
 Pentru containerizarea cu Docker am instalat libraria si am creat un dockerfile pentru rulare.
 
+Poze pentru a demonstra functionarea proiectului :
 
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/133673312/0868ab5c-b4e7-4c3f-9af2-d160453fb02c)
 
@@ -22,8 +23,6 @@ Jenkins:
 Docker:
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/133673312/b9e98754-2171-4abe-8c3d-c3db442deb51)
 
-
-Poze pentru a demonstra functionarea proiectului :
 
 
 Atasez mai jos toate comenzile executate pentru realizarea proiectului:

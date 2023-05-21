@@ -32,7 +32,41 @@ Am inceput sa modific fisierele pentru floarea mea (Orhidee)
 
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/9e641a43-f59f-4cc9-8be4-c923a35bf811)
 
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/a01152bf-4769-439b-9ecb-df110176f26b)
+
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/3b2543b6-c165-4bd1-9150-3d2d5bba834e)
+
+Am creat Jenkinsfile unde am adaugat urmatoarele : 
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/8d72bb93-9be7-434d-afff-218eacf70605)
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/88fb6451-68af-434a-adf5-07d2bf88495b)
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/39fa8022-2bf9-474e-86e6-21f1df4ef296)
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/92bb40b4-6259-4da1-af25-aff082b5d0dc)
+
+ Git branch-ul 
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/9ddd13ff-f68d-4633-880e-cfdb50a592a1)
+
+L-am verificat si in ocean blue utilizand jenkins
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/0c3f165e-4521-4879-bc54-c879cac66bc4)
+
+Am incercat sa fac push pe git insa am intampinat urmatoarea eroare 
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/6c77e1b0-e62b-4dc7-a596-8319ea3c8ecf)
+
+Aceasta s-a rezolvat cu urmatoarea secventa de cod 
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92320395/f89e7150-3da4-4141-870d-b5be331d60f0)
+
+
+
+
+
+
 
 
 

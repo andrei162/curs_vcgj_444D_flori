@@ -50,4 +50,43 @@ def ia_clasificare_crin():
     return ret
     
     
+@app.route("/Orhidee/", methods=['GET'])
+def get_Orhidee():
+    ret = "<h1>Orhidee<h1>"
+    ret += "Culoare: "
+    ret += lib.biblioteca_flori.culoare_Orhidee()
+    ret += "<br>"
+    
+    ret += "Anotimp: "
+    ret += lib.biblioteca_flori.anotimp_Orhidee()
+    ret += "<br>"
+    
+    ret += "Clasificare: "
+    ret += lib.biblioteca_flori.clasificare_Orhidee()
+    ret += "<br>"
+    
+    return ret
+    
+@app.route("/Orhidee/culoare", methods=['GET'])
+def ia_culoare_Orhidee():
+    ret = ""
+    ret += lib.biblioteca_flori.culoare_Orhidee()
+    
+    return ret
+    
+@app.route("/Orhidee/anotimp", methods=['GET'])
+def ia_anotimp_Orhidee():
+    ret = ""
+    ret += lib.biblioteca_flori.anotimp_Orhidee()
+    
+    return ret
+    
+@app.route("/Orhidee/clasificare", methods=['GET'])
+def ia_clasificare_Orhidee():
+    ret = ""
+    ret += lib.biblioteca_flori.clasificare_Orhidee()
+    
+    return ret
+    
+    
 app.run(host = "127.0.0.1", port = 5001)

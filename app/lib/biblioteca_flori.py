@@ -8,4 +8,15 @@ def anotimp_crin():
 def clasificare_crin():
     return("toxic")
     
+def culoare_Orhidee():
+    return("Multicolora")
+   
+    
+def anotimp_Orhidee():
+    return("Primavara")
+    
+def clasificare_Orhidee():
+    return("Decorativa")
+    
+
 

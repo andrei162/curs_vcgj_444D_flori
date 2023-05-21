@@ -21,3 +21,26 @@ def test_clasificare_crin():
         assert True
     else: 
         assert False
+        
+
+def test_culoare_Orhidee():
+    cul = bflori.culoare_Orhidee()
+    if cul == "Multicolora" : 
+        assert True
+    else: 
+        assert False
+        
+
+def test_anotimp_Orhidee():
+    cul = bflori.anotimp_Orhidee()
+    if cul == "Primavara" :
+        assert True
+    else: 
+        assert False
+
+def test_clasificare_Orhidee():
+    cul = bflori.clasificare_Orhidee()
+    if cul == "Decorativa" :
+        assert True
+    else: 
+        assert False

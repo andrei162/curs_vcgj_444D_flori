@@ -1,8 +1,26 @@
 # Proiect site cu flori - exemplu personal Liliac
 
+Am instalat toate librariile necesare(git,gedit,pytest,pip,jenkins,docker,etc) si am creat un director "git" in care am lucrat la proiect. Continutul acestuia l-am pus intr-un repository pe GitHub( https://github.com/andrei162/curs_vcgj_444D_flori/tree/devel/Gabello8_flori).
+Am ales floarea "Liliac" si am completat toate functiile si fisierele cu trasaturiile specifice acesteia(culoare(), anotimp(), clasificare() si biblioteca_flori, 444D_flori, etc)
+Am creat un host local pe 127.0.0.1:5001 unde pentru afisarea programului 444D_flori.py, iar cu extensia /liliac ni se vor afisare si trasaturile acestei flori.
+Pentru a testa ca nu suntem erori, am creat programul biblioteca_flori care prin intermediul pytest verifica daca fisierele sunt completate bine.
+Dupa ce am verificat ca totul este in regula, am conectat GitHub si am dat push documentelor updatate.
+In continuare am instalat Jenkins pentru testare. Am facut cont pe site-ul acestuia si am instalat Blue Ocean. Pentru testare in pipeline Jenkins am folosit un mediu virtual(venv) si flask.
+Pentru containerizarea cu Docker am instalat libraria si am creat un dockerfile pentru rulare.
 
 
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/133673312/0868ab5c-b4e7-4c3f-9af2-d160453fb02c)
 
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/133673312/b6c425a4-b4b2-4138-93b5-eb9216559af3)
+Jenkins:
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/133673312/6a32b7f0-45cc-4093-ad93-f20caf95565a)
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/133673312/9fa05e9e-6657-430f-b253-3f47db0f2796)
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/133673312/df253d9a-3c0b-4820-b19f-dd6a656caed7)
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/133673312/9e352bd0-cffc-4f95-ba94-ed036d0f2e68)
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/133673312/8d2f0c8d-65f9-4ecb-a172-8c49b65f0425)
+
+Docker:
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/133673312/b9e98754-2171-4abe-8c3d-c3db442deb51)
 
 
 Poze pentru a demonstra functionarea proiectului :

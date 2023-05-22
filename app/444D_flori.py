@@ -49,5 +49,44 @@ def ia_clasificare_crin():
     
     return ret
     
+@app.route("/margareta/", methods=['GET'])
+def get_margareta():
+	ret = "<h1>Margareta<h1>"
+	ret += "Culoare: "
+	ret += lib.biblioteca_flori.culoare_margareta()
+	ret += "<br>"
+	
+	ret += "Anotimp: "
+	ret += lib.biblioteca_flori.anotimp_margareta()
+	ret += "<br>"
     
-app.run(host = "127.0.0.1", port = 5001)
+	ret += "Clasificare: "
+	ret += lib.biblioteca_flori.clasificare_margareta()
+	ret += "<br>"
+	
+	return ret
+    
+@app.route("/margareta/culoare", methods=['GET'])
+def ia_culoare_margareta():
+	ret = ""
+	ret += lib.biblioteca_flori.culoare_margareta()
+    
+	return ret
+    
+@app.route("/margareta/anotimp", methods=['GET'])
+def ia_anotimp_margareta():
+	ret = ""
+	ret += lib.biblioteca_flori.anotimp_margareta()
+    
+	return ret
+    
+@app.route("/margareta/clasificare", methods=['GET'])
+def ia_clasificare_margareta():
+	ret = ""
+	ret += lib.biblioteca_flori.clasificare_margareta()
+    
+	return ret    
+    
+    
+    
+#app.run(host = "127.0.0.1", port = 5001)

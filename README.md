@@ -41,7 +41,11 @@ Inainte de a face push la aceste fisiere comise am vrut sa imi salvez credential
 
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/128401623/1ac687ad-6456-444d-9ec8-26e82afc67e1)
 
+Am testat functionalitatea pipline-ului:
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/128401623/022fb1b5-d095-45e6-912e-8a838eb6df29)
 
+Cu oceanblue:
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/128401623/fe33e507-005a-4a44-8e9a-60c3fdad283b)
 
 
 

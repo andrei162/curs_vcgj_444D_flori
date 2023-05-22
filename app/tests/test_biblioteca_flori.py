@@ -39,7 +39,7 @@ def test_anotimp_floarea_pastelui():
 
 def test_clasificare_floarea_pastelui():
     cul = bflori.clasificare_floarea_pastelui()
-    if cul == "decorativ" :
+    if cul == "decorativa" :
         assert True
     else: 
         assert False

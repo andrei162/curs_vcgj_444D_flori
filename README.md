@@ -37,6 +37,11 @@ Instalare Jenkins:
 Status Jenkins:
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/84671601/651cf252-3bb4-4fa4-b1e6-25d58659aa92)
 
+Test Jenkins:
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/84671601/76c8d97e-a96a-4bd4-b8e3-38a51760d756)
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/84671601/cc4a0dfe-3184-484b-a037-617b9f315b26)
+
+
 Accesand localhost:8080, va porni sistemul Jenkins din moment ce aplicatia asculta pe portul 8080.
 Pentru prima folosire este cerut Administrator password.Pentru aceasta va trebui sa accesam un fisier secret care se gaseste accesand calea urmatoare: 
 $sudo cat /var/lib/Jenkins/secrets/initialAdminPassword – ne va da in consola CLI parola de tip hash pe care o introducem in Jenkins. De aici vom configura contul de Jenkins care se ocupa de acest repository si de aici putem crea teste pentru script-uri – Freestyle,Pipeline Install suggested Plugins Create account -> user = admin ; password = admin -> Save and Continue -> Manage Jenkins -> Install Plugins -> Available Plugins -> Search Blue Ocean -> Install

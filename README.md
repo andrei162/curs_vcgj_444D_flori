@@ -33,8 +33,10 @@
     Instalare docker : 
   ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92914156/4fb6db70-6d1e-4314-a597-ab73689d3364)
   
-   Am creat fisierele Dockerfile, dockerstart.sh si quickrequirements.txt : 
+   Am creat fisierele Dockerfile, dockerstart.sh si quickrequirements.txt folosint comanda " touch ... ", iar pentru editarea fisierului, comanda " gedit ... & " .
+  
   Dockerfile : 
+  
   ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92914156/12dd4999-49a8-4e32-9182-adff8e3f0dbd)
 
   dockerstart.sh : 

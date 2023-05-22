@@ -26,9 +26,11 @@ Am instalat programul python3 deoarece avem nevoie de fișiere de tip .py ce tre
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/132925523/4346787f-d9cf-43d6-8ca7-4c3d0ff73eac)
 
 Apoi am instalat extensia "flask" din python3:
+comanda sudo apt install python3-pip se folosește pentru a instala pachetul Flask pentru Python 3. Flask este un framework web ușor și flexibil pentru dezvoltarea rapidă a aplicațiilor web în limbajul Python
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/132925523/c4ef7aaa-74a6-41b9-ba26-6f063e3abd7a)
 
 Instalăm pachetele din python3:
+comanda sudo apt install python3 pip se foloseș pentru a instala pachetul Python 3 și utilitarul Pip asociat
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/132925523/784ddf2e-2bbf-4002-9376-8fbe8e520a3c)
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/132925523/bda428ea-2a4e-43f8-8268-f076fff274ca)
 
@@ -39,6 +41,37 @@ Instalez programul "vim" și folosim folderup "app"
 
 După, pentru a continua proiectul trebuie configurat și instalat programul Jenkins, apoi trebuie configurat programul pentru a stabili caracteristicile pentru floarea asignată pentru userul ”tedmnt” și anume floarea paștelui de culoare oranj, ce înflorește primăvra, și este o floare decorativă
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/132925523/14431c4e-31e0-4887-b242-4b204a6896bc)
+Pentru a face aplicația să funcționeze trebuie configurate mai multe teste fișiere adică: activeaza_venv, activeaza_venv_jenkins, ruleaza_aplicatia
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/132925523/13fb1861-b949-432c-80fd-2844a7352407)
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/132925523/88c8e0c5-7c38-44f9-8236-6d08ac400fc0)
+
+Și observăm că fișierele au fost realizate:
+activeaza_venv
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/132925523/45ffc7d7-521d-43ca-a404-ba84387d192e)
+
+activeaza_venv_jenkins
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/132925523/6eff13a6-f4d1-4770-a296-566327342295)
+
+quickrequirements.txt
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/132925523/43718729-8af2-487d-8a56-e3707611c09a)
+
+
+Configurarea bibliotecii cu paramentrii pentru Floarea Paștelui:
+-culoare: oranj
+-anotimp: primăvara
+-clasificare: decorativă
+prima dată testul
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/132925523/57112414-78ec-42af-8469-e87110a97c80)
+iar apoi biblioteca
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/132925523/abdd3123-52a5-402a-a69e-68176d2604fc)
+
+Pentru a accesa jenkins-ul am intrat pe localhost-ul 8080 după am configurat un nou pipeline "tedmnt_flori_pipeline":
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/132925523/6adc289a-5c0d-4ea1-9b3a-ccd51c719e46)
+
+După configurarea Jenkins-ului observăm că funcționează:
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/132925523/51e9185f-7da8-499e-be86-a3cebbbab4ef)
+
+Pentru a testa funcționalitatea și a configura astfel încât totul să fie în regulă am folosit următoarele comenzi:
 
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/132925523/ffc4fdf5-642a-44b0-bc9f-72cbf282b9f0)
 

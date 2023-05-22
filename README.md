@@ -9,7 +9,7 @@ git status:
 Fisiere proiect:
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/84671601/4283b9b0-69dd-4f25-9ca3-358eb09623f7)
 
-Pentru a crea acest proiect, avem nevoie de un director pe Ubuntu: $ mkdir git În acest director, vom extrage un depozit pe care l-am creat din GitHub. Mergem la GitHub, intrăm în contul nostru personal și creăm un depozit gol cu ​​un fișier README în el. md și .gitignore cu șabloane Python. În CLI, dăm o stare git pentru a vedea dacă directorul git este supravegheat de git: $git status
+Pentru a crea acest proiect, avem nevoie de un director pe Ubuntu: $ mkdir git În acest director, vom extrage un depozit pe care l-am creat din GitHub. Mergem la GitHub, intrăm în contul nostru personal și creăm un depozit gol cu un fișier README în el. md și .gitignore cu șabloane Python. În CLI, dăm o stare git pentru a vedea dacă directorul git este supravegheat de git: $git status
 
 $ git clone https://github.com/andrei162/curs_vcgj_444D_flori.git $ cd curs_vcgj_444D_flori $ ls -la - pentru a vedea dacă ați clonat fișierele necesare pentru acest depozit din GitHub - README.md și .gitignore.In . /lib comentat este adăugat la linia git. Acum putem crea fișierele necesare pentru proiect, cel mai important 444D_flori.py, care va genera rutele, unde vom apela funcțiile necesare.
 
@@ -18,9 +18,41 @@ $ git clone https://github.com/andrei162/curs_vcgj_444D_flori.git $ cd curs_vcgj
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/84671601/cd1d6cdb-7974-44a8-9294-ffe9a215475f)
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/84671601/701a2846-f650-4dd6-91fa-1192bbcd4dbe)
 
+La sfarsitul codului in Python, pentru a rula site-ul folosind localhost-ul, vom folosi: 
+app.run(host = "127.0.0.1", port = 5001) Acum vom putea porni programul 444D_flori.py din directorul /app astfel: $python3 444D_flori.py Programul va porni pe masina locala, putem accesa link-ul 127.0.0.1 :5001 SAU localhost :5001 si ne va duce pe o pagina simpla, cu un text, iar dac ape langa acest link mai punem si /lalea ne va duce catre alta pagina unde avem toate functiile cu return-urile respective.
+
 Rezultatele testarii:
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/84671601/1dd334f1-eef7-47c9-9b27-1e52c937fe49)
 
+Instalare Jenkins:
+1.Verificare daca este instalat java: $java -version
+2.Instalare Java : $sudo apt install java
+3.$sudo apt install openjdk-11-jdk - pentru JavaJDK 11
+4.$sudo apt install curl
+5.$curl -fsSl | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+6.$echo deb [signed-by=/usr/share/keyrings/Jenkins-keyring.asc] binary | sudo tee /etc/apt/source.list.d/Jenkins.list > dev/null
+7.$sudo apt-get update
+8.$sudo apt install jenkins -y
+9.$sudo systemctl status Jenkins
+
+Accesand localhost:8080, va porni sistemul Jenkins din moment ce aplicatia asculta pe portul 8080.
+Pentru prima folosire este cerut Administrator password.Pentru aceasta va trebui sa accesam un fisier secret care se gaseste accesand calea urmatoare: 
+$sudo cat /var/lib/Jenkins/secrets/initialAdminPassword – ne va da in consola CLI parola de tip hash pe care o introducem in Jenkins. De aici vom configura contul de Jenkins care se ocupa de acest repository si de aici putem crea teste pentru script-uri – Freestyle,Pipeline Install suggested Plugins Create account -> user = admin ; password = admin -> Save and Continue -> Manage Jenkins -> Install Plugins -> Available Plugins -> Search Blue Ocean -> Install
+
+Instalare docker:
+1.sudo apt-get update
+2.sudo apt-get install ca-certificates curl gnupg lsb-release
+3.sudo mkdir -p /etc/apy/keyrings
+4.curl -fsSL | sudo gpg –dearmor -o /etc/apy/keyrings/docker.gpg 
+5.echo “deb [arch=$(dpkg –print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] $(lsb_release -cs) stable”| sudo tee /etc/apt/sources.list.d/docker.list > /dev/null 
+6.sudo apt-get update 
+7.sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-compose Pentru a face acest lucru este necesar un Dockerfile, o imagine cu numele – 444D_flori, un fisier pentru a porni serviciul docker – dockerstart.sh
+
+Pentru a crea imaginea, folosim comanda:
+$sudo docker build -t 444d_flori:v01 .
+
+Pentru a rula containerul, folosim comanda:
+$sudo docker run --name 444D_flori -p 8020:5001 444d_flori:v01 8020 – portul de pe masina locala unde va raspunde serverul din docker 5001 – portul din interiorul containerului 444d_flori – numele containerului 444D_flori – numele repository-ului :v01 – versiunea pentru container
 
 Comenzile folosite pentru realizarea acestui proiect sunt:
 
@@ -241,246 +273,166 @@ Comenzile folosite pentru realizarea acestui proiect sunt:
   215  sudo docker images
   216  sudo docker rmi sudo systemctl restart jenkins
   217  sudo docker build -t 444d_flori:v01 .
-  218* 
-  219  sudo docker rmi 8ec571a91884
-  220  sudo docker rmi -r 8ec571a91884
-  221  docker rmi --help
-  222  sudo docker rmi -f 8ec571a91884
-  223  git status
-  224  git add .
-  225  git commit 
-  226  git commit "am facut docker-ul"
-  227  history 
-  228  git commit -m "am facut docker-ul"
-  229  git push
-  230  ls
-  231  cd lib
-  232  mkdir lib
-  233  cd lib
-  234  touch biblioteca_flori.py
-  
-  235  gedit biblioteca_flori.py 
-  236  cd ..
-  237  cd app
-  238  gedit 444D_flori.py 
-  239  cd ..
-  240  cd lib
-  
-  241  gedit biblioteca_flori.py 
-  242  cd ..
-  243  git add .
-  244  git commit -m "sper ca e gata"
-  
-  245  git push
-  246  sudo docker build -t 444d_flori:v01 .
-  247  sudo docker run
-  248  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
-  249  docker images
-  250  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
-  251  docker ps -a
-  252  sudo docker images
-  253  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
-  254  sudo docker run
-  255  sudo docker run --help
-  
-  256  sudo docker run --name 444d_flori_vali -p 8020:5020 444d_flori:v01 .
-  257  cd app
-  258  ls
-  259  chmod 777 dockerstart.sh 
-  
-  260  cd ..
-  261  sudo docker run --name 444d_flori_vali -p 8020:5020 444d_flori:v01 .
-  262  sudo docker images
-  263  sudo docker run --name 444d_flori
-  
-  264* 
-  265  sudo docker run --name 444d_flori_vali -p 8020:5020 444d_flori:v01 .
+  218  sudo docker rmi 8ec571a91884
+  219  sudo docker rmi -r 8ec571a91884
+  220  docker rmi --help
+  221  sudo docker rmi -f 8ec571a91884
+  222  git status
+  223  git add .
+  224  git commit 
+  225  git commit "am facut docker-ul"
+  226  history 
+  227  git commit -m "am facut docker-ul"
+  228  git push
+  229  ls
+  230  cd lib
+  231  mkdir lib
+  232  cd lib
+  233  touch biblioteca_flori.py
+  234  gedit biblioteca_flori.py 
+  235  cd ..
+  236  cd app
+  237  gedit 444D_flori.py 
+  238  cd ..
+  239  cd lib
+  240  gedit biblioteca_flori.py 
+  241  cd ..
+  242  git add .
+  243  git commit -m "sper ca e gata"
+  244  git push
+  245  sudo docker build -t 444d_flori:v01 .
+  246  sudo docker run
+  247  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
+  248  docker images
+  249  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
+  250  docker ps -a
+  251  sudo docker images
+  252  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
+  253  sudo docker run
+  254  sudo docker run --help
+  255  sudo docker run --name 444d_flori_vali -p 8020:5020 444d_flori:v01 .
+  256  cd app
+  257  ls
+  258  chmod 777 dockerstart.sh 
+  259  cd ..
+  260  sudo docker run --name 444d_flori_vali -p 8020:5020 444d_flori:v01 .
+  261  sudo docker images
+  262  sudo docker run --name 444d_flori
+  263  sudo docker run --name 444d_flori_vali -p 8020:5020 444d_flori:v01 .
+  264  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
+  265  sudo docker rmi 88cb7a66504a5fbac2c0a2fbde5025168b128b96e7e44fc5c9b51660f013876b
   266  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
-  
-  267  sudo docker rmi 88cb7a66504a5fbac2c0a2fbde5025168b128b96e7e44fc5c9b51660f013876b
+  267  docker run --help
   268  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
-  269  docker run --help
-  270  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
-  
-  271  sudo docker rmi 444d_flori
-  272  sudo systemctl restart docker
-  273  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
-  274  sudo docker images
-  275  sudo docker rmi 52ab21f989c6
-  276  sudo docker rmi -f 52ab21f989c6
-  277  sudo systemctl restart docker
-  278  history 
-  279  sudo docker build -t 444d_flori:v01 .
-  
-  280  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
-  281  git status
-  282  docker start
-  283  docker start 88cb7a66504a5fbac2c0a2fbde5025168b128b96e7e44fc5c9b51660f013876b
-  284  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
-  285  sudo docker start -a 444d_flori
+  269  sudo docker rmi 444d_flori
+  270  sudo systemctl restart docker
+  271  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
+  272  sudo docker images
+  273  sudo docker rmi 52ab21f989c6
+  274  sudo docker rmi -f 52ab21f989c6
+  275  sudo systemctl restart docker
+  276  history 
+  277  sudo docker build -t 444d_flori:v01 .
+  278  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
+  279  git status
+  280  docker start
+  281  docker start 88cb7a66504a5fbac2c0a2fbde5025168b128b96e7e44fc5c9b51660f013876b
+  282  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
+  283  sudo docker start -a 444d_flori
+  284  sudo docker images
+  285  sudo docker rmi -f 8361c0932ae4
   286  sudo docker images
-  
-  287  sudo docker rmi -f 8361c0932ae4
-  288  sudo docker images
-  289  cd app
-  
-  290  sudo chmod 777 dockerstart.sh 
-  291  cd ..
-  
-  292  cd app
-  293  gedit dockerstart.sh 
-  
-  294  git add .
-  295  git commit -m "sper sa meargav2"
-  
-  296  git push
-  
-  297  history 
-  298  sudo systemctl restart docker
-  299  cd ..
-  300  sudo docker build -t 444d_flori:v01 .
-  301  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
-  302  sudo docker run --name 444d_florii -p 8020:5020 444d_flori:v01 .
+  287  cd app
+  288  sudo chmod 777 dockerstart.sh 
+  289  cd ..
+  290  cd app
+  291  gedit dockerstart.sh 
+  292  git add .
+  293  git commit -m "sper sa meargav2"
+  294  git push
+  295  history 
+  296  sudo systemctl restart docker
+  297  cd ..
+  298  sudo docker build -t 444d_flori:v01 .
+  299  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
+  300  sudo docker run --name 444d_florii -p 8020:5020 444d_flori:v01 .
+  301  ls
+  302  cd app
   303  ls
-  304  cd app
-  305  ls
-  306  cd ..
-  307  sudo docker ps -a
-  
-  308  sudo docker rmi -f aec5abbc6596
-  309  sudo docker rm aec5abbc6596
-  310  sudo docker ps -a
-  
-  311  sudo docker rm 52ab21f989c6
-  312  sudo docker rm d969ffabc2c2
-  313  sudo docker ps -a
-  314  sudo docker rm 88cb7a66504a
-  315  sudo docker images
-  316  history
-  
-  317  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
-  318  sudo docker start --name 444d_flori
-  319  sudo docker start
-  
-  320  sudo docker start --help
-  
+  304  cd ..
+  305  sudo docker ps -a
+  306  sudo docker rmi -f aec5abbc6596
+  307  sudo docker rm aec5abbc6596
+  308  sudo docker ps -a
+  309  sudo docker rm 52ab21f989c6
+  310  sudo docker rm d969ffabc2c2
+  311  sudo docker ps -a
+  312  sudo docker rm 88cb7a66504a
+  313  sudo docker images
+  314  history
+  315  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
+  316  sudo docker start --name 444d_flori
+  317  sudo docker start
+  318  sudo docker start --help
+  319  sudo docker ps -a
+  320  sudo docker start 784f9392b40a
   321  sudo docker ps -a
-  
   322  sudo docker start 784f9392b40a
-  323  sudo docker ps -a
-  
-  324  sudo docker start 784f9392b40a
-  
-  325  git status
-  
-  326  git add .
-  
-  327  git commit -m "am modificat biblioteca"
-  
-  328  git push
-  
-  329  history
-  
-  330  sudo docker ps -a
-  
-  331  sudo docker rm 784f9392b40a
-  
-  332  sudo docker rm -f 784f9392b40a
-  
+  323  git status
+  324  git add .
+  325  git commit -m "am modificat biblioteca"
+  326  git push
+  327  history
+  328  sudo docker ps -a
+  329  sudo docker rm 784f9392b40a
+  330  sudo docker rm -f 784f9392b40a
+  331  sudo docker ps -a
+  332  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
   333  sudo docker ps -a
-  
-  334  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
-  
+  334  sudo docker rm -f 9bb845fdf0b1
   335  sudo docker ps -a
-  
-  336  sudo docker rm -f 9bb845fdf0b1
-  
-  337  sudo docker ps -a
-  
-  338  history 
-  
-  339  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
-  
-  340  docker ps -a
-  
-  341  sudo docker ps -a
-  
-  342  sudo docker rm -f 4e2e7d6e38d9
-  
-  343  history 
-  
-  344  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
-  
+  336  history 
+  337  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
+  338  docker ps -a
+  339  sudo docker ps -a
+  340  sudo docker rm -f 4e2e7d6e38d9
+  341  history 
+  342  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
+  343  sudo docker ps -a
+  344  sudo docker rm -f 868c83c6a4ce
   345  sudo docker ps -a
-  
-  346  sudo docker rm -f 868c83c6a4ce
-  
-  347* 
-  
-  348  sudo docker ps -a
-  
-  349  sudo docker rm -f c54abab584c1
-  
+  346  sudo docker rm -f c54abab584c1
+  347  sudo docker ps -a
+  348  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
+  349  ps -a
   350  sudo docker ps -a
-  
-  351  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
-  
-  352  ps -a
-  
-  353  sudo docker ps -a
-  
-  354  sudo docker rm -f b584fb7697cc
-  
-  355  git stauts
-  
-  356  git status
-  
-  357  git add .
-  
-  358  git commit -m "test"
-  
-  359  git push
-  
-  360  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
-  
-  361  hist
-  
-  362  history 
-  
-  363  sudo docker ps -a
-  
-  364  sudo docker rm -f e42f31a12916
-  
-  365  sudo docker iamges
-  
-  366  sudo docker image
-  
-  367  sudo docker images
-  
-  368  sudo docker rmi 8361c0932ae4
-  
-  369  history
-  
-  370  sudo docker build -t 444d_flori:v01 .
-  
-  371  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
-  
-  372  history 
-  
-  373  sudo docker ps -a
-  
-  374  1549a5d95915
-  
-  375  sudo docker rm -f 1549a5d95915
-  
-  376  sudo docker images
-  
-  377  sudo docker rmi 04bb9d920b3f
-  
-  378  git add .
-  
-  379  git commit -m "modificare finala(sper)"
-  
-  380  git push
-  
-  381  history 
+  351  sudo docker rm -f b584fb7697cc
+  352  git stauts
+  353  git status
+  354  git add .
+  355  git commit -m "test"
+  356  git push
+  357  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
+  358  hist
+  359  history 
+  360  sudo docker ps -a
+  361  sudo docker rm -f e42f31a12916
+  362  sudo docker iamges
+  363  sudo docker image
+  364  sudo docker images
+  365  sudo docker rmi 8361c0932ae4
+  366  history
+  367  sudo docker build -t 444d_flori:v01 .
+  368  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
+  369  history 
+  370  sudo docker ps -a
+  371  1549a5d95915
+  372  sudo docker rm -f 1549a5d95915
+  373  sudo docker images
+  374  sudo docker rmi 04bb9d920b3f
+  375  git add .
+  376  git commit -m "modificare finala(sper)"
+  377  git push
+  378  history 
+  379  sudo docker build -t 444d_flori:v01 .
+  380  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .

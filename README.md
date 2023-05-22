@@ -1,4 +1,4 @@
-# Proiect site cu flori - Exemplu personal - Lavanda
+# Proiect site cu flori - Exemplu personal - Narcisa
   Pentru a realiza documentatia am instalat toate librariile necesare : git, gedit, python3, pytest, vim, docker, pip, jenkins, etc; Am creat un director denumit <git> dedicat proiectului.
   
   Continutul proiectului a fost adaugat intr-un repository pe GitHub : https://github.com/andrei162/curs_vcgj_444D_flori/edit/devel/andreiicrs_flori

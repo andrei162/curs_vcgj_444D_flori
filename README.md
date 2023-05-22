@@ -40,6 +40,7 @@ Status Jenkins:
 Test Jenkins:
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/84671601/76c8d97e-a96a-4bd4-b8e3-38a51760d756)
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/84671601/cc4a0dfe-3184-484b-a037-617b9f315b26)
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/84671601/898ffde4-80b4-40a6-a20c-a0561ef7da5f)
 
 
 Accesand localhost:8080, va porni sistemul Jenkins din moment ce aplicatia asculta pe portul 8080.

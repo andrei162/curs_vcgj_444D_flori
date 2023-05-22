@@ -21,3 +21,25 @@ def test_clasificare_crin():
         assert True
     else: 
         assert False
+     
+def test_culoare_trandafir():
+    cul = bflori.culoare_trandafir()
+    if cul == "rosu" : 
+        assert True
+    else: 
+        assert False
+        
+
+def test_anotimp_trandafir():
+    cul = bflori.anotimp_trandafir()
+    if cul == "toamna" :
+        assert True
+    else: 
+        assert False
+
+def test_clasificare_trandafir():
+    cul = bflori.clasificare_trandafir()
+    if cul == "aromat" :
+        assert True
+    else: 
+        assert False

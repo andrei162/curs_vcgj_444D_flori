@@ -49,5 +49,42 @@ def ia_clasificare_crin():
     
     return ret
     
+@app.route("/narcisa/", methods=['GET'])
+def get_narcisa():
+    ret = "<h1>narcisa<h1>"
+    ret += "Culoare: "
+    ret += lib.biblioteca_flori.culoare_narcisa()
+    ret += "<br>"
+    
+    ret += "Anotimp: "
+    ret += lib.biblioteca_flori.anotimp_narcisa()
+    ret += "<br>"
+    
+    ret += "Clasificare: "
+    ret += lib.biblioteca_flori.clasificare_narcisa()
+    ret += "<br>"
+    
+    return ret
+    
+@app.route("/narcisa/culoare", methods=['GET'])
+def ia_culoare_narcisa():
+    ret = ""
+    ret += lib.biblioteca_flori.culoare_narcisa()
+    
+    return ret
+    
+@app.route("/narcisa/anotimp", methods=['GET'])
+def ia_anotimp_narcisa():
+    ret = ""
+    ret += lib.biblioteca_flori.anotimp_narcisa()
+    
+    return ret
+    
+@app.route("/narcisa/clasificare", methods=['GET'])
+def ia_clasificare_narcisa():
+    ret = ""
+    ret += lib.biblioteca_flori.clasificare_narcisa()
+    
+    return ret
     
 app.run(host = "127.0.0.1", port = 5001)

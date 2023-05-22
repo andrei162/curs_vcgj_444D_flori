@@ -21,3 +21,25 @@ def test_clasificare_crin():
         assert True
     else: 
         assert False
+        
+def test_culoare_narcisa():
+    cul = bflori.culoare_narcisa()
+    if cul == "alb" : 
+        assert True
+    else: 
+        assert False
+        
+
+def test_anotimp_narcisa():
+    cul = bflori.anotimp_narcisa()
+    if cul == "primavara" :
+        assert True
+    else: 
+        assert False
+
+def test_clasificare_narcisa():
+    cul = bflori.clasificare_narcisa()
+    if cul == "frumoasa" :
+        assert True
+    else: 
+        assert False

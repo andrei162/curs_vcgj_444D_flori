@@ -54,8 +54,32 @@ Am testat functionalitatea pipline-ului:
 Cu oceanblue:
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/128401623/fe33e507-005a-4a44-8e9a-60c3fdad283b)
 
+DOCKER
+
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-compose 
+
+Am creeat fisierul docker:
 
 
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/128401623/f9d4bc1b-a2f3-4f1e-9a30-c0d21f3f5701)
+ 
+ Si fisierele dockerstart.sh, quickrequirements.txt le-am adaugat in /app
+ 
+ ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/128401623/89b71d1e-bab7-41c7-a0b3-229aeaddcef8)
+
+Am creat imaginea:
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/128401623/dc28f769-bc4d-4de2-945f-d9439fa9b302)
+
+
+pentru a putea rula aplicatia trebuie sa avem permisiuni de executie: sudo chmod 777 dockerstart.sh 
+
+
+Am deschis aplicatia cu comanda:
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/128401623/83176603-5dcb-4e1d-954c-3a9187df38f6)
+
+Aplicatia ruleaza in browser localhost:8020
 
 
 

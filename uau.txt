@@ -1,0 +1,197 @@
+    1  sudo apt install buil-essential dkms linux-headers-$(uname -r)
+    2  sudo apt install build-essential dkms linux-headers-$(uname -r)
+    3  sudo mkdir /mnt/cdrom
+    4  sudo mount /dev/cdrom /mnt/cdrom
+    5  cd /mnt/cdrom/
+    6  ./VBox
+    7  ./VBoxLinuxAdditions.exe
+    8  ./VBoxLinuxAdditions.run
+    9  sudo ./VBoxLinuxAdditions.run
+   10  cd git
+   11  mkdir git
+   12  cd git
+   13  cd
+   14  cd desktop
+   15  cd Desktop
+   16  mkdir git
+   17  cd git
+   18  cd
+   19  sudo apt install git
+   20  sudo apt install gedit
+   21  cd Desktop/
+   22  ls -la
+   23  cd git
+   24  git status
+   25  git clone https://github.com/andrei162/curs_vcgj_444D_flori.git
+   26  ls -la
+   27  cd curs _vcgj_444D_flori/
+   28  cd curs_vcgj_444D_flori/
+   29  ls -la
+   30  cd app
+   31  ls -la
+   32  grdit 444D_flori.py
+   33  gedit 444D_flori.py
+   34  sudo apt install python3
+   35  python3 444D_flori.py 
+   36  sudo apt install flask
+   37  sudo apt install python3-flask
+   38  python3 444D_flori.py 
+   39  sudo apt install python3-flask
+   40  cd lib
+   41  ls -la
+   42  gedit biblioteca_flori.py
+   43  cd ..
+   44  ls -la
+   45  cd tests
+   46  gedit test_biblioteca_flori.py
+   47  cd ..
+   48  sudo apt install python3-pip
+   49  pip install pytest
+   50  cd app
+   51  python3 444D_flori.py 
+   52  [200~gedit biblioteca_flori.py
+   53  gedit 444D_flori.py
+   54  gedit biblioteca_flori.py
+   55  cd lib
+   56  gedit biblioteca_flori.py
+   57  cd
+   58  cd Desktop
+   59  cd git
+   60  cd curs_vcgj_444D_flori
+   61  cd app
+   62  gedit 444D_flori.py
+   63  python3 444D_flori.py 
+   64  gedit 444D_flori.py
+   65  python3 444D_flori.py 
+   66  gedit 444D_flori.py
+   67  python3 444D_flori.py 
+   68  cd tests
+   69  gedit test_biblioteca_flori.py
+   70  cd ..
+   71  python3 -m pytest -v
+   72  '/home/daniela/Desktop/git'
+   73  ls -la
+   74  cd ..
+   75  touch Jenkinsfile
+   76  gedit Jenkinsfile
+   77  cd app
+   78  touch activeaza_venv
+   79  gedit activeaza_venv
+   80  touch activeaza_venv_jenkins
+   81  gedit activeaza_venv_jenkins
+   82  touch ruleaza_aplicatia
+   83  gedit ruleaza_aplicatia
+   84  gedit ruleaza_aplicatia &
+   85  ls -la
+   86  cd
+   87  java -version
+   88  cd DEsktop/
+   89  cd Desktop/
+   90  cd git
+   91  ls -la
+   92  cd curs_vcgj_444D_flori/
+   93  git branch
+   94  git branch devel/danielatoh
+   95  git branch devel/danielatoh_flori
+   96  git checkout devel/danielatoh_flori
+   97  git branch
+   98  git branch devel/danielatoh_flori
+   99  git checkout devel/danielatoh_flori
+  100  git branch
+  101  git status
+  102  git add .
+  103  git status
+  104  git commit -n "Pregatire Jenkins"
+  105  git commit -m "Pregatire Jenkins"
+  106  git config --global user.email "tohaneanudaniela@yahoo.com"
+  107  git config --global user.name "danielatoh"
+  108  git commit -m "Pregatire Jenkins"
+  109  git status
+  110  git config --global credential.helper store
+  111  git push
+  112  git push --set-upstream origin devel/danielatoh_flori
+  113  java -version
+  114  sudo apt install openjdk-11-jdk
+  115  sudo apt install curl 
+  116  curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \ https://pkg.jenkins.io/debian-stable binary/ | sudo tee  /etc/apt/sources.list.d/jenkins.list > /dev/null
+  117  curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee \ /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+  118  sudo apt install curl 
+  119  curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+  120  echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]  https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
+  121  sudo apt-get update
+  122  sudo apt-get install jenkins
+  123  sudo systemctl status jenkins
+  124  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+  125  git branch
+  126  cd app
+  127  source activeaza_venv
+  128  source activeaza_venv_jenkins
+  129  git status
+  130  source ruleaza_aplicatia
+  131  gedit 444D_flori.py 
+  132  cd ..
+  133  git status
+  134  gid add .
+  135  git status
+  136  git push
+  137  sudo apt install python3.10-venv
+  138  git status
+  139  sudo apt install python3-pylint
+  140  pip install pylint
+  141  sudo apt install python3-pylint
+  142  sudo apt install python3-venv
+  143  pip install pylint
+  144  cd
+  145  sudo apt-get update
+  146  sudo apt-get install ca-certificates curl gnupg lsb-release
+  147  sudo mkdir -p /etc/apt/keyrings
+  148  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+  149  echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  150  sudo apt-get update
+  151  sudo chmod a+r /etc/apt/keyrings/docker.gpg
+  152  sudo apt-get update
+  153  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-compose 
+  154  sudo chmod 777 /etc/apt/keyrings/docker.gpg
+  155  sudo apt-get update
+  156  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-compose –y
+  157  cd DEsktop/
+  158  cd Desktop/
+  159  cd git/
+  160  cd curs_vcgj_444D_flori/
+  161  ls -la
+  162  touch Dockerfile
+  163  gedit Dockerfile &
+  164  cd app
+  165  touch quickrequirements.txt
+  166  gedit quickrequirements.txt
+  167  touch dockerstart.sh
+  168  gedit dockerstart.sh
+  169  ls -la
+  170  cd ..
+  171  sudo docker build -t 444D_flori:v01 .
+  172  sudo docker build -t 444d_flori:v01 .
+  173  cd app
+  174  source activeaza_venv
+  175  python -n pip install --upgrate pip
+  176  python -m pip install --upgrate pip
+  177  ls -la
+  178  cd ..
+  179  ls -la
+  180  gedit Dockerfile
+  181  sudo docker build -t 444d_flori:v01 .
+  182  sudo docker images
+  183  sudo docker ps -a
+  184  sudo docker run --name 444d_flori -p 8020:5020 444d_flori
+  185  docker ps -a
+  186* sudo docker 
+  187  sudo docker ps -a
+  188  sudo docker images
+  189  sudo docker rmi b2245e8345a6
+  190  deactivate
+  191  cd app
+  192  sudo chmod 777 dockerstart.sh
+  193  cd ..
+  194  sudo docker build -t 444d_flori:v01 .
+  195  sudo docker run
+  196  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01
+  197  history >> uau.txt 

@@ -49,5 +49,45 @@ def ia_clasificare_crin():
     
     return ret
     
+
+
+@app.route("/foarea_pastelui/", methods=['GET'])
+def get_floarea_pastelui():
+    ret = "<h1>Floarea Pastelui<h1>"
+    ret += "Culoare: "
+    ret += lib.biblioteca_flori.culoare_floarea_pastelui()
+    ret += "<br>"
     
-app.run(host = "127.0.0.1", port = 5001)
+    ret += "Anotimp: "
+    ret += lib.biblioteca_flori.anotimp_floarea_pastelui()
+    ret += "<br>"
+    
+    ret += "Clasificare: "
+    ret += lib.biblioteca_flori.clasificare_floarea_pastelui()
+    ret += "<br>"
+    
+    return ret
+    
+@app.route("/floarea_pastelui/culoare", methods=['GET'])
+def ia_culoare_floarea_pastelui():
+    ret = ""
+    ret += lib.biblioteca_flori.culoare_floarea_pastelui()
+    
+    return ret
+    
+@app.route("/floarea_pastelui/anotimp", methods=['GET'])
+def ia_anotimp_floarea_pastelui():
+    ret = ""
+    ret += lib.biblioteca_flori.anotimp_floarea_pastelui()
+    
+    return ret
+    
+@app.route("/floarea_pastelui/clasificare", methods=['GET'])
+def ia_clasificare_floarea_pastelui():
+    ret = ""
+    ret += lib.biblioteca_flori.clasificare_floarea_pastelui()
+    
+    return ret
+    
+    
+##app.run(host = "127.0.0.1", port = 5001)

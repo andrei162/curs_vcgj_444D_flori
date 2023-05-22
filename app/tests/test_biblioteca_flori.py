@@ -21,3 +21,25 @@ def test_clasificare_crin():
         assert True
     else: 
         assert False
+        
+def test_culoare_floarea_pastelui():
+    cul = bflori.culoare_floarea_pastelui()
+    if cul == "oranj" : 
+        assert True
+    else: 
+        assert False
+        
+
+def test_anotimp_floarea_pastelui():
+    cul = bflori.anotimp_floarea_pastelui()
+    if cul == "primavara" :
+        assert True
+    else: 
+        assert False
+
+def test_clasificare_floarea_pastelui():
+    cul = bflori.clasificare_floarea_pastelui()
+    if cul == "decorativ" :
+        assert True
+    else: 
+        assert False

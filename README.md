@@ -258,16 +258,19 @@ Comenzile folosite pentru realizarea acestui proiect sunt:
   232  mkdir lib
   233  cd lib
   234  touch biblioteca_flori.py
+  
   235  gedit biblioteca_flori.py 
   236  cd ..
   237  cd app
   238  gedit 444D_flori.py 
   239  cd ..
   240  cd lib
+  
   241  gedit biblioteca_flori.py 
   242  cd ..
   243  git add .
   244  git commit -m "sper ca e gata"
+  
   245  git push
   246  sudo docker build -t 444d_flori:v01 .
   247  sudo docker run
@@ -279,21 +282,26 @@ Comenzile folosite pentru realizarea acestui proiect sunt:
   253  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
   254  sudo docker run
   255  sudo docker run --help
+  
   256  sudo docker run --name 444d_flori_vali -p 8020:5020 444d_flori:v01 .
   257  cd app
   258  ls
   259  chmod 777 dockerstart.sh 
+  
   260  cd ..
   261  sudo docker run --name 444d_flori_vali -p 8020:5020 444d_flori:v01 .
   262  sudo docker images
   263  sudo docker run --name 444d_flori
+  
   264* 
   265  sudo docker run --name 444d_flori_vali -p 8020:5020 444d_flori:v01 .
   266  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
+  
   267  sudo docker rmi 88cb7a66504a5fbac2c0a2fbde5025168b128b96e7e44fc5c9b51660f013876b
   268  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
   269  docker run --help
   270  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
+  
   271  sudo docker rmi 444d_flori
   272  sudo systemctl restart docker
   273  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
@@ -303,6 +311,7 @@ Comenzile folosite pentru realizarea acestui proiect sunt:
   277  sudo systemctl restart docker
   278  history 
   279  sudo docker build -t 444d_flori:v01 .
+  
   280  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
   281  git status
   282  docker start
@@ -310,16 +319,22 @@ Comenzile folosite pentru realizarea acestui proiect sunt:
   284  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
   285  sudo docker start -a 444d_flori
   286  sudo docker images
+  
   287  sudo docker rmi -f 8361c0932ae4
   288  sudo docker images
   289  cd app
+  
   290  sudo chmod 777 dockerstart.sh 
   291  cd ..
+  
   292  cd app
   293  gedit dockerstart.sh 
+  
   294  git add .
   295  git commit -m "sper sa meargav2"
+  
   296  git push
+  
   297  history 
   298  sudo systemctl restart docker
   299  cd ..
@@ -331,77 +346,141 @@ Comenzile folosite pentru realizarea acestui proiect sunt:
   305  ls
   306  cd ..
   307  sudo docker ps -a
+  
   308  sudo docker rmi -f aec5abbc6596
   309  sudo docker rm aec5abbc6596
   310  sudo docker ps -a
+  
   311  sudo docker rm 52ab21f989c6
   312  sudo docker rm d969ffabc2c2
   313  sudo docker ps -a
   314  sudo docker rm 88cb7a66504a
   315  sudo docker images
   316  history
+  
   317  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
   318  sudo docker start --name 444d_flori
   319  sudo docker start
+  
   320  sudo docker start --help
+  
   321  sudo docker ps -a
+  
   322  sudo docker start 784f9392b40a
   323  sudo docker ps -a
+  
   324  sudo docker start 784f9392b40a
+  
   325  git status
+  
   326  git add .
+  
   327  git commit -m "am modificat biblioteca"
+  
   328  git push
+  
   329  history
+  
   330  sudo docker ps -a
+  
   331  sudo docker rm 784f9392b40a
+  
   332  sudo docker rm -f 784f9392b40a
+  
   333  sudo docker ps -a
+  
   334  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
+  
   335  sudo docker ps -a
+  
   336  sudo docker rm -f 9bb845fdf0b1
+  
   337  sudo docker ps -a
+  
   338  history 
+  
   339  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
+  
   340  docker ps -a
+  
   341  sudo docker ps -a
+  
   342  sudo docker rm -f 4e2e7d6e38d9
+  
   343  history 
+  
   344  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
+  
   345  sudo docker ps -a
+  
   346  sudo docker rm -f 868c83c6a4ce
+  
   347* 
+  
   348  sudo docker ps -a
+  
   349  sudo docker rm -f c54abab584c1
+  
   350  sudo docker ps -a
+  
   351  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
+  
   352  ps -a
+  
   353  sudo docker ps -a
+  
   354  sudo docker rm -f b584fb7697cc
+  
   355  git stauts
+  
   356  git status
+  
   357  git add .
+  
   358  git commit -m "test"
+  
   359  git push
+  
   360  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
+  
   361  hist
+  
   362  history 
+  
   363  sudo docker ps -a
+  
   364  sudo docker rm -f e42f31a12916
+  
   365  sudo docker iamges
+  
   366  sudo docker image
+  
   367  sudo docker images
+  
   368  sudo docker rmi 8361c0932ae4
+  
   369  history
+  
   370  sudo docker build -t 444d_flori:v01 .
+  
   371  sudo docker run --name 444d_flori -p 8020:5020 444d_flori:v01 .
+  
   372  history 
+  
   373  sudo docker ps -a
+  
   374  1549a5d95915
+  
   375  sudo docker rm -f 1549a5d95915
+  
   376  sudo docker images
+  
   377  sudo docker rmi 04bb9d920b3f
+  
   378  git add .
+  
   379  git commit -m "modificare finala(sper)"
+  
   380  git push
+  
   381  history 

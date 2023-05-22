@@ -11,8 +11,11 @@ Mihai Carmen-Andreea 444D
   Am clonat repository-ul de pe github:
    git clone https://github.com/andrei162/curs_vcgj_444D_flori.git
   Am creat pe desktop :
+  
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/133675024/978a12b2-755f-450d-8c7a-49f7e0f3d9e9)
+
   Putem vizualiza si fisierele din interiorul lui:
+  
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/133675024/4139189e-7770-4cf2-8739-12bdf71ca4c4)
 
  Am creat un branch nou numit devel/amihai24_flori cu comanda git branch si m-am mutat pe noul branch cu comanda git checkout.

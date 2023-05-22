@@ -77,9 +77,11 @@ aceea este foarte important de completat.
 
 Pentru inceput vom avea nevoie de mai multe programe instalate pe masina virtuala cu sistemul de operare Linux: git, gedit,vim,python3,pytest,pip,docker,jenkins
 Status git:
+  
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/84671601/bd001251-11f6-4276-aa40-c25ec91b875c)
 
 Fisiere proiect:
+  
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/84671601/4283b9b0-69dd-4f25-9ca3-358eb09623f7)
 
 Pentru a crea acest proiect, avem nevoie de un director pe Ubuntu: $ mkdir git În acest director, vom extrage un depozit pe care l-am creat din GitHub. Mergem la GitHub, intrăm în contul nostru personal și creăm un depozit gol cu un fișier README în el. md și .gitignore cu șabloane Python. În CLI, dăm o stare git pentru a vedea dacă directorul git este supravegheat de git: $git status
@@ -95,6 +97,7 @@ La sfarsitul codului in Python, pentru a rula site-ul folosind localhost-ul, vom
 app.run(host = "127.0.0.1", port = 5001) Acum vom putea porni programul 444D_flori.py din directorul /app astfel: $python3 444D_flori.py Programul va porni pe masina locala, putem accesa link-ul 127.0.0.1 :5001 SAU localhost :5001 si ne va duce pe o pagina simpla, cu un text, iar dac ape langa acest link mai punem si /lalea ne va duce catre alta pagina unde avem toate functiile cu return-urile respective.
 
 Rezultatele testarii:
+  
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/84671601/1dd334f1-eef7-47c9-9b27-1e52c937fe49)
 
 Instalare Jenkins:
@@ -108,9 +111,11 @@ Instalare Jenkins:
 8.$sudo apt install jenkins -y
 9.$sudo systemctl status Jenkins
 Status Jenkins:
+  
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/84671601/651cf252-3bb4-4fa4-b1e6-25d58659aa92)
 
 Test Jenkins:
+  
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/84671601/76c8d97e-a96a-4bd4-b8e3-38a51760d756)
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/84671601/cc4a0dfe-3184-484b-a037-617b9f315b26)
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/84671601/898ffde4-80b4-40a6-a20c-a0561ef7da5f)
@@ -129,6 +134,7 @@ Instalare docker:
 6.sudo apt-get update 
 7.sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-compose Pentru a face acest lucru este necesar un Dockerfile, o imagine cu numele – 444D_flori, un fisier pentru a porni serviciul docker – dockerstart.sh
 Status docker:
+  
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/84671601/6a08fd5c-62aa-470a-888f-b90009bb2adf)
 
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/84671601/aa8bf557-1190-4d10-839a-788a0b05d1d6)

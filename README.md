@@ -41,8 +41,7 @@ Inainte de a face push la aceste fisiere comise am vrut sa imi salvez credential
 
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/128401623/1ac687ad-6456-444d-9ec8-26e82afc67e1)
 
--venv 
--pylint
+
 
 
 

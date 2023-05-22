@@ -43,7 +43,7 @@ Se creeaza cu comanda touch Dockerfile un fisier gol cu numele Dockerfile pe car
 
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93121932/5f18fbbb-69cd-4725-a467-af7a5a09c09b)
 
-Cu change directory trecem in app directory unde se va crea un fisier gol quickrequirements.txt .
+Cu change directory trecem in app directory unde se va crea un fisier gol quickrequirements.txt.
 cd app
 touch quickrequirements.txt
 gedit quickrequirements.txt -> comanda cu care deschidem si editam fisierul quickrequirements.txt :

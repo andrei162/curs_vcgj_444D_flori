@@ -103,6 +103,11 @@ Aplicatia ruleaza in browser localhost:8020
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/128401623/c8fa01c9-8ecb-4e54-8f0f-ee1011cfd227)
 
 
+PR:
+
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/128401623/ddfbdfad-6afe-4f9b-9b5a-7fd772076250)
+
 
 
 

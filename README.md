@@ -2,7 +2,80 @@
 
 Proiect site cu flori
 
-Pentru inceput vom avea nevoie de mai multe programe instalate pe masina virtuala cu Ubuntu : git, gedit,vim,python3,pytest,pip,docker,jenkins
+● Obiectiv: 
+Practica utilizarii de unelte folosite in industria software cum ar fi: masina virtuala, Git si GitHub, Jenkins, Docker.
+Aspectul concret va fi dat de dezvoltarea unei aplicatii simple in care se vor folosi uneltele mentionate mai sus.
+Obiectivul nu este dezvoltarea aplicatiei in sine, de aceea cunostintele de Python si Flask (limbajul de programare folosit si framework-ul bazat pe Python 
+cu care se va dezvolta aplicatia) necesare implementarii proiectului sunt minime. Practic, nu este nevoie sa se cunoasca in avans Python sau Flask.
+Rezultatul proiectului va fi o aplicatie software dezvoltata de catre studentii unei grupe in care fiecare student aiba propria parte de functionalitate si sa o 
+testeze folosind Jenkins, sa contribuie la calitatea aplicatiei in general prin analiza codul adaugat de celelalte persoane care contribuie la proiect folosind 
+‘pull request’-urile (cererile de integrare) din git, sa pregateasca aplicatia de livrare prin containerizarea acesteia.
+Toate aceste operatii se intalnesc in majoritatea proiectelor care implica software: dezvoltare, testare, suport, ‘DevOps’ etc. iar instrumentele 
+mentionate mai sus sunt foarte frecvent intalnite.
+● Abordare:
+– Creere aplicatie care sa permita lucrul colaborativ – fiecare student sa-si poata adauga propriul cod de aplicatie si cod de testare
+– Utilizare git pentru a colabora cu ceilalti colegi in vederea construirii aplicatiei si pentru cod review
+– Executia testelor se va face cu ajutorul Jenkins utilizand un pipeline declarativ si fisier Jenkins in branch-ul personal de dezvoltare
+– Fiecare student va adauga si Dockerfile in branch-ul personal de dezvoltare pentru containerizarea aplicatiei
+– Documentarea va fi facuta pe github, folosind folosind fisierul README_<identificator>.md din branch-ul personal de dezvoltare si fisierul 
+README.md care va fi integrat in main in care vor fi adaugate modificarile de la toti utilizatorii 
+  
+● Se va folosi ca exemplu aplicatia: https://github.com/crchende/sysinfo/tree/devel. 
+● Teme pe grupa:
+  
+– flori: 444D (Andrei Murgoci)
+● Pentru fiecare grupa se va crea un repository curs_vcgj_444D_flori
+● Aplicatia WEB/Flask va avea ca fiesier principal fisierul: 444D_flori.py, situat directorul app din repository
+● Fiecare student va alege un element specific temei (exemplu foare: crin)
+● Va crea in app/lib/biblioteca_flori.py doua functii specifice elementului (exempu: in app/lib/biblioteca_flori.py, 
+functiile: culoare_crin(), descriere_crin() care sa afiseze informatii sugerate de titlu
+● In aplicatia principala, vor fi adaugate trei rute, una pentru element (ex. crin), si cate una pentru fiecare informatie specifica (ex. 
+culoare_crin, descriere_crin)
+  
+● Creere repository pe git-hub:
+– curs_vcgj_444D_flori
+● Adaugare colaboratori: 
+– Colegi de grupa
+– Coordonarori proiect: sobreja, Cosminccs, crchende 
+● Configurare repository
+– Branch-uri:
+● main
+● devel/validragulete_flori - un branch diferit pentru fiecare dezvoltator
+– Branch protejat: ‘main’
+– Integrare in main (merge) doar cu Pull Request si minim 3 review-uri: o colega / un coleg de grupa si minim 2 coordonatori
+● Modificare cod local, adaugare modificare pe GitHub in branch-ul personal devel/<utilizator>
+● Creare Pull Request pentru a integra codul din branch-ul personal in ‘main’
+● Fiecare ‘branch’ de dezvoltare va contine Jenkins file
+● La ‘pull-request’ dezvoltatorul trebuie sa adauge rezultatele rularii testelor.
+● Testarea se va face prin rularea ‘unit-test’-elor cu Jenkins 
+● Pe fiecare branch de dezvoltare, trebuie creat ‘Dockerfile’ care va fi folosit pentru creara contaierului cu aplicatia care trebuie sa 
+contina functionalitatea la care se lucreaza (ex. crin – containerul creat cu codul cu crin, trebuie sa contina aceasta 
+functionalitate, sa pot vedea informatiile referitoare prin executia acestui container).
+● In fisierul de documentare a branch-ului (vezi descrierea cerintelor de documentare) se vor adauga capturi de ecran unde sa 
+se vada:
+– imagina de container creata, 
+– containerul creat pe baza acestei imagini, 
+– browserul care acceseaza aplicatia rulata in container
+– mesajele afisate in consola de unde s-a pornit executia containerului, care sa ateste faptul ca browserul web apeleaza 
+aplicatia executata de container
+● Optional, se poate incarca containerul aplicatiei pe dockerhub
+  
+● Pe fiecare branch de dezvoltare: ajutorul fisierelor README.md. aunde se vor adauga informatii referitoare la:
+– functionalitatea adaugata, 
+– stadiul implementarii – daca codul a fost adaugat, 
+– testele facute, fisierul jenkins configurat, s-a testat cu manual, s-a testat cu Jenkins, 
+– Integrarea – daca s-a facut sau se asteapta review si aprobare pentru PR
+– Daca s-a facut containerizarea
+– Pull request-urile la care a facut review, cu ID 
+– ce mai este de facut, 
+– daca-i nevoie de ajutor.
+● La nivelu intregii aplicatii: prin intermediul fisierul Readme.md unde fiecare dezvoltataor va adauga elementul pentru care adauga 
+functionalitate, identificatorul dezvoltatorului, stadiul de implementare, testare, integrare. Acest fisier va fi completat in branch-ul de 
+dezvoltare si va fi integrat in main.
+Daca este completat corect, acest fisier ar trebui sa ne dea o imagine destul de clara despre stadiul de dezvoltarea al proiectului, de 
+aceea este foarte important de completat.
+
+Pentru inceput vom avea nevoie de mai multe programe instalate pe masina virtuala cu sistemul de operare Linux: git, gedit,vim,python3,pytest,pip,docker,jenkins
 Status git:
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/84671601/bd001251-11f6-4276-aa40-c25ec91b875c)
 

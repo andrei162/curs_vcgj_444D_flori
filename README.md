@@ -104,7 +104,28 @@ Dupa build aplicatiei de pe branchul devel are succes. Se poate folosi si Blueoc
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92923136/0f117d77-5e38-46de-98e3-7c9a66451191)
 
 Acum ca aplicatia este pregatita de a rula online pe server ne ocupam de containerizarea ei cu Docker.
+Se urmareste procesul de instalare docker ca in documentatia cursului.
+Cream fisierul Dockerfile in directorul de proiect cu configurarile aferente si dockerstart.sh in directorul app care va fi entrypointul. Mai avem nevoie si de fisierul care specifica softurile necesare pentru rularea aplicatiei quickrequrements.txt creat tot in /app.
     
+Dockerfile :
+    
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92923136/eb5b6be2-7136-4cfc-ae41-befe0f645dd1)
+
+dockerstart.sh :
+    
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92923136/caddca87-b522-4578-98e2-b2f9bb19a657)
+
+quickrequirements.txt :
+    
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92923136/787a2cdd-e9eb-456c-a636-55b8325f5f20)
+    
+Buildul cu docker are succes 
+    
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92923136/8224a4c0-5971-42ce-9d2b-e6c1a99cd789)
+
+Dupa ce rulam aplicatia containerizara cu comanda docker run verificam localhost:8020
+    
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92923136/5f147f4e-5a0c-4f19-982a-75fa9badd60c)   
 
 
 

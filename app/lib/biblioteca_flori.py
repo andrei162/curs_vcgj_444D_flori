@@ -7,11 +7,11 @@ def anotimp_crin():
 def clasificare_crin():
     return("toxic")
     
-def culoare_lalea():
-    return("Roz")
+def culoare_margareta():
+    return("Alb")
    
-def anotimp_lalea():
+def anotimp_margareta():
     return("Primavara")
     
-def clasificare_lalea():
-    return("Liliaceae")
+def clasificare_margareta():
+    return("Asteraceae")

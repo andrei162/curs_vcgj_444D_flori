@@ -8,10 +8,10 @@ def clasificare_crin():
     return("toxic")
     
 def culoare_margareta():
-    return("Alb")
+    return("alb")
    
 def anotimp_margareta():
-    return("Primavara")
+    return("primavara")
     
 def clasificare_margareta():
     return("Asteraceae")

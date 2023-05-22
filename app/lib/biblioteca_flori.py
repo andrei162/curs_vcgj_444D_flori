@@ -8,4 +8,12 @@ def anotimp_crin():
 def clasificare_crin():
     return("toxic")
     
-
+def culoare_margareta():
+    return("alb")
+   
+    
+def anotimp_margareta():
+    return("vara")
+    
+def clasificare_margareta():
+    return("asteraceae")

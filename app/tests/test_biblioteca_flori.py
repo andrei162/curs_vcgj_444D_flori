@@ -5,8 +5,7 @@ def test_culoare_crin():
     if cul == "alb" : 
         assert True
     else: 
-        assert False
-        
+        assert False 
 
 def test_anotimp_crin():
     cul = bflori.anotimp_crin()
@@ -21,3 +20,24 @@ def test_clasificare_crin():
         assert True
     else: 
         assert False
+        
+def test_culoare_margareta():
+    cul = bflori.culoare_margareta()
+    if cul == "alb" : 
+        assert True
+    else: 
+        assert False
+        
+def test_anotimp_margareta():
+    cul = bflori.anotimp_margareta()
+    if cul == "primavara" :
+        assert True
+    else: 
+        assert False
+
+def test_clasificare_margareta():
+    cul = bflori.clasificare_margareta()
+    if cul == "Asteraceae" :
+        assert True
+    else: 
+        assert False   

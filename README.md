@@ -1,5 +1,6 @@
 # curs_vcgj_444D_flori
 Mentionez de la inceput ca mie mi s-a inchis terminalul si singura metoda de a recupera ce am facut este folosind comanda history
+
 Voi adauga doar cod si ulterior voi reface anumite parti in terminal.
 Trebuie sa avem instalate mai multe programe cu comanda sudo apt install dar mai intai, pentru a crea acest proiect, avem nevoie de un director pe Ubuntu. Folosim comanda mkdir dir-local GIT,pentru a crea directorul in care vom incarca de pe GitHub un repository creat de noi din contul de GitHub. Cu git status verificam starea directorului.
 Cu comanda ls -la data in directorul curs_vcgj_444D_flori vedem:
@@ -113,5 +114,4 @@ Folosindu-ne de container id , utilizam comanda sudo docker rm 794e26e1e590:
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93121932/3f9ae76c-f509-45d4-bb75-37187b84aa80)
 Comanda sudo docker:
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93121932/6bea35b4-8fce-4a8a-abfb-9eacb599d616)
-
 

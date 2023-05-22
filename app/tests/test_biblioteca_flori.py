@@ -21,3 +21,25 @@ def test_clasificare_crin():
         assert True
     else: 
         assert False
+        
+def test_culoare_bujor():
+    cul = bflori.culoare_bujor()
+    if cul == "rosie" : 
+        assert True
+    else: 
+        assert False
+        
+
+def test_anotimp_bujor():
+    cul = bflori.anotimp_bujor()
+    if cul == "primavara" :
+        assert True
+    else: 
+        assert False
+
+def test_clasificare_bujor():
+    cul = bflori.clasificare_bujor()
+    if cul == "parfumat" :
+        assert True
+    else: 
+        assert False

@@ -21,3 +21,25 @@ def test_clasificare_crin():
         assert True
     else: 
         assert False
+        
+def test_culoare_zambila():
+    cul = bflori.culoare_zambila()
+    if cul == "mov" : 
+        assert True
+    else: 
+        assert False
+        
+
+def test_anotimp_zambila():
+    cul = bflori.anotimp_zambila()
+    if cul == "primavara" :
+        assert True
+    else: 
+        assert False
+
+def test_clasificare_zambila():
+    cul = bflori.clasificare_zambila()
+    if cul == "parfumat" :
+        assert True
+    else: 
+        assert False

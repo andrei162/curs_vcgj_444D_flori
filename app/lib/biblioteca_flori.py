@@ -8,4 +8,13 @@ def anotimp_crin():
 def clasificare_crin():
     return("toxic")
     
-
+def culoare_zambila():
+    return("mov")
+   
+    
+def anotimp_zambila():
+    return("primavara")
+    
+def clasificare_zambila():
+    return("parfumat")
+    

@@ -49,10 +49,17 @@ Am incarcat fisierele pe server cu comanda push si am instalat jenkins pe masina
 
 
 Am testat functionalitatea pipline-ului:
+
+
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/128401623/022fb1b5-d095-45e6-912e-8a838eb6df29)
 
 Cu oceanblue:
+
+
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/128401623/fe33e507-005a-4a44-8e9a-60c3fdad283b)
+
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/128401623/2e64808d-b319-435d-aa11-2dbde2846633)
 
 DOCKER
 
@@ -70,6 +77,13 @@ Am creeat fisierul docker:
 Am creat imaginea:
 
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/128401623/dc28f769-bc4d-4de2-945f-d9439fa9b302)
+
+
+Cu comenzile sudo docker images si sudo docker ps -a am verificat daca imaginea a fost creeata:
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/128401623/41488d0f-6721-498a-88a5-59926d1ef1f9)
+
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/128401623/f02d5398-48c7-4ffb-929d-8a0afea6c53a)
 
 
 pentru a putea rula aplicatia trebuie sa avem permisiuni de executie: sudo chmod 777 dockerstart.sh 

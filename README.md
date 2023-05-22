@@ -80,10 +80,13 @@ Am creat imaginea:
 
 
 Cu comenzile sudo docker images si sudo docker ps -a am verificat daca imaginea a fost creeata:
-![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/128401623/41488d0f-6721-498a-88a5-59926d1ef1f9)
 
 
-![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/128401623/f02d5398-48c7-4ffb-929d-8a0afea6c53a)
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/128401623/f4b3ef09-d8ce-409a-96fd-3d2c531ab812)
+
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/128401623/9c1eba46-bfc9-45d3-acd6-ae4ed404eddb)
+
 
 
 pentru a putea rula aplicatia trebuie sa avem permisiuni de executie: sudo chmod 777 dockerstart.sh 
@@ -94,6 +97,10 @@ Am deschis aplicatia cu comanda:
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/128401623/83176603-5dcb-4e1d-954c-3a9187df38f6)
 
 Aplicatia ruleaza in browser localhost:8020
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/128401623/892c255e-6a94-4dbd-8710-f5a728ad3038)
+
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/128401623/c8fa01c9-8ecb-4e54-8f0f-ee1011cfd227)
 
 
 

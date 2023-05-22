@@ -49,5 +49,42 @@ def ia_clasificare_crin():
     
     return ret
     
+@app.route("/Dalie/", methods=['GET'])
+def get_Dalie():
+    ret = "<h1>Dalie<h1>"
+    ret += "Culoare: "
+    ret += lib.biblioteca_flori.culoare_Dalie()
+    ret += "<br>"
+    
+    ret += "Anotimp: "
+    ret += lib.biblioteca_flori.anotimp_Dalie()
+    ret += "<br>"
+    
+    ret += "Clasificare: "
+    ret += lib.biblioteca_flori.clasificare_Dalie()
+    ret += "<br>"
+    
+    return ret
+    
+@app.route("/Dalie/culoare", methods=['GET'])
+def ia_culoare_Dalie():
+    ret = ""
+    ret += lib.biblioteca_flori.culoare_Dalie()
+    
+    return ret
+    
+@app.route("/Dalie/anotimp", methods=['GET'])
+def ia_anotimp_Dalie():
+    ret = ""
+    ret += lib.biblioteca_flori.anotimp_Dalie()
+    
+    return ret
+    
+@app.route("/Dalie/clasificare", methods=['GET'])
+def ia_clasificare_Dalie():
+    ret = ""
+    ret += lib.biblioteca_flori.clasificare_Dalie()
+    
+    return ret
     
 app.run(host = "127.0.0.1", port = 5001)

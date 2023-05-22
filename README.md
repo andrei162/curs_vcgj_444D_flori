@@ -3,7 +3,7 @@
 Proiect site cu flori
 
 Pentru inceput vom avea nevoie de mai multe programe instalate pe masina virtuala cu Ubuntu : git, gedit,vim,python3,pytest,pip,docker,jenkins
-git status:
+Status git:
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/84671601/bd001251-11f6-4276-aa40-c25ec91b875c)
 
 Fisiere proiect:
@@ -34,6 +34,8 @@ Instalare Jenkins:
 7.$sudo apt-get update
 8.$sudo apt install jenkins -y
 9.$sudo systemctl status Jenkins
+Status Jenkins:
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/84671601/651cf252-3bb4-4fa4-b1e6-25d58659aa92)
 
 Accesand localhost:8080, va porni sistemul Jenkins din moment ce aplicatia asculta pe portul 8080.
 Pentru prima folosire este cerut Administrator password.Pentru aceasta va trebui sa accesam un fisier secret care se gaseste accesand calea urmatoare: 
@@ -47,12 +49,20 @@ Instalare docker:
 5.echo “deb [arch=$(dpkg –print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] $(lsb_release -cs) stable”| sudo tee /etc/apt/sources.list.d/docker.list > /dev/null 
 6.sudo apt-get update 
 7.sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-compose Pentru a face acest lucru este necesar un Dockerfile, o imagine cu numele – 444D_flori, un fisier pentru a porni serviciul docker – dockerstart.sh
+Status docker:
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/84671601/6a08fd5c-62aa-470a-888f-b90009bb2adf)
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/84671601/aa8bf557-1190-4d10-839a-788a0b05d1d6)
+
+![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/84671601/d21b3202-3b62-48c4-98f7-e9e4f22ea625)
+
 
 Pentru a crea imaginea, folosim comanda:
 $sudo docker build -t 444d_flori:v01 .
 
 Pentru a rula containerul, folosim comanda:
 $sudo docker run --name 444D_flori -p 8020:5001 444d_flori:v01 8020 – portul de pe masina locala unde va raspunde serverul din docker 5001 – portul din interiorul containerului 444d_flori – numele containerului 444D_flori – numele repository-ului :v01 – versiunea pentru container
+
 
 Comenzile folosite pentru realizarea acestui proiect sunt:
 

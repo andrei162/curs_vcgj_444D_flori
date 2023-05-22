@@ -34,6 +34,7 @@
   ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92914156/4fb6db70-6d1e-4314-a597-ab73689d3364)
   
    Am creat fisierele Dockerfile, dockerstart.sh si quickrequirements.txt folosint comanda " touch ... ", iar pentru editarea fisierului, comanda " gedit ... & " .
+  
   ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92914156/d7f5baf6-bc6f-4f5f-b887-26ffc4477efb)
 
   
@@ -61,7 +62,7 @@
   
   ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92914156/c74c3b91-07b5-4162-983d-ee7b9f7a8227)
   
-    Jenkins : 
+   Jenkins : 
   
   ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/92914156/cf0fbd13-e8ce-4da7-aa34-c1e3f8c03319)
   

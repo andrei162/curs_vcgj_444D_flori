@@ -124,5 +124,5 @@ $sudo docker run --name 444D_flori -p 8020:5001 444d_flori:v01 8020 – portul d
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/132925764/efebe623-f7f1-4721-a3bb-c36e0c115eea)
 
 
-In fisierul uau.txt se afla intregul toate comenzile folosite in realizarea acestui proiect
+In fisierul uau.txt se afla toate comenzile folosite in realizarea acestui proiect
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/132925764/5c891bd1-318c-4a72-a5d7-8023f102e1ea)

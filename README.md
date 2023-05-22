@@ -1,5 +1,10 @@
 # curs_vcgj_444D_flori
 
+Crusitu Ioan-Teofil 444D 
+
+Floare: Hortensie
+
+
 Pentru inceput am facut niste verificari " de rutina" prin comanda _sudo apt get update_ si verificari la nivelul aplicatiilor python3, gedit, git si altele, pentru a vedea daca sunt sau nu instalate si gata de utilizare. (ex: _sudo apt install python3_)
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/103361643/8f37ac57-7249-49b9-8875-5b0e297b043b)
 

@@ -3,7 +3,10 @@ Mentionez de la inceput ca mie mi s-a inchis terminalul si singura metoda de a r
 Voi adauga doar cod si ulterior voi reface anumite parti in terminal.
 Trebuie sa avem instalate mai multe programe cu comanda sudo apt install dar mai intai, pentru a crea acest proiect, avem nevoie de un director pe Ubuntu. Folosim comanda mkdir dir-local GIT,pentru a crea directorul in care vom incarca de pe GitHub un repository creat de noi din contul de GitHub. Cu git status verificam starea directorului.
 Cu comanda ls -la data in directorul curs_vcgj_444D_flori vedem:
+
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93121932/eaafa8d3-b750-46eb-8f77-49ab1221ad91)
+
+
 Si tot cu comanda ls -la data in directorul app vedem:
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93121932/8a75a6b8-f253-407e-8d0d-4cf0aa8aa27b)
 Pentru floarea aleasa de mine,"bujor", este nevoie de cele 3 functii bujor_culoare() care trebuie sa afiseze "Rosu", bujor_anotimp() afiseaza "primavara" si bujor_clasificare() care afiseaza "parfumat"

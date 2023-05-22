@@ -44,16 +44,7 @@ Dupa asta, folosim git add pentru adaugarea modificarilor pe branch si ulterior 
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/103361643/3ab96c6f-e22b-48b4-abfa-9cb20b52f5c8)
 
 
-
-
-
-
-
-
-
-
-
-
+Dupa build aplicatiei de pe branchul devel are succes. Se poate folosi si Blueocean pentru mai multe detalii ale buildului de pipeline.
 
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/103361643/4a805a2d-aac4-4a31-9b75-26752eed8712)
 

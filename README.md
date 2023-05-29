@@ -29,7 +29,7 @@ Pentru a porni o sesiune si a putea accesa localhost:8020 am adaugat comanda:
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93872614/05ce04a0-4348-402a-a5dc-497eb2f98878)
 Si am avut parte de o eroare si nu am putut accesa localhost:8020:
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93872614/4cad8fb0-a843-424a-9d75-d425d0d56772)
-Am incercat sa rezolv problema dar nu am reusit:
+Am incercat sa rezolv problema dar nu am reusit(am dat run la container dar nu a mers):
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93872614/daebb1fe-2650-4568-afc4-210c9a8185ec)
 Aici putem observa cum hostul 5001 functioneaza pentru Hibiscus:
 

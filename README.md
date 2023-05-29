@@ -32,6 +32,7 @@ Si am avut parte de o eroare si nu am putut accesa localhost:8020:
 Am incercat sa rezolv problema dar nu am reusit:
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93872614/daebb1fe-2650-4568-afc4-210c9a8185ec)
 Aici putem observa cum hostul 5001 functioneaza pentru Hibiscus:
+
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93872614/5c8b2b22-bb0c-47d7-b959-ecd5bf5950ab)
 
 

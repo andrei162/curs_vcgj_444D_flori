@@ -87,5 +87,43 @@ def ia_clasificare_ghiocel():
     
     return ret
     
+@app.route("/hibiscus/", methods=['GET'])
+def get_hibiscus():
+    ret = "<h1>Hibiscus<h1>"
+    ret += "Culoare: "
+    ret += lib.biblioteca_flori.culoare_hibiscus()
+    ret += "<br>"
+    
+    ret += "Anotimp: "
+    ret += lib.biblioteca_flori.anotimp_hibiscus()
+    ret += "<br>"
+    
+    ret += "Clasificare: "
+    ret += lib.biblioteca_flori.clasificare_hibiscus()
+    ret += "<br>"
+    
+    return ret
+    
+@app.route("/hibiscus/culoare", methods=['GET'])
+def ia_culoare_hibiscus():
+    ret = ""
+    ret += lib.biblioteca_flori.culoare_hibiscus()
+    
+    return ret
+    
+@app.route("/hibiscus/anotimp", methods=['GET'])
+def ia_anotimp_hibiscus():
+    ret = ""
+    ret += lib.biblioteca_flori.anotimp_hibiscus()
+    
+    return ret
+    
+@app.route("/hibiscus/clasificare", methods=['GET'])
+def ia_clasificare_hibiscus():
+    ret = ""
+    ret += lib.biblioteca_flori.clasificare_hibiscus()
+    
+    return ret
+    
     
 app.run(host = "127.0.0.1", port = 5001)

@@ -43,4 +43,27 @@ def test_clasificare_ghiocel():
     if cul == "parfumat" :
         assert True
     else: 
-        assert False        
+        assert False   
+        
+        
+def test_culoare_hibiscus():
+    cul = bflori.culoare_hibiscus()
+    if cul == "roz" : 
+        assert True
+    else: 
+        assert False
+        
+
+def test_anotimp_hibiscus():
+    cul = bflori.anotimp_hibiscus()
+    if cul == "primavara" :
+        assert True
+    else: 
+        assert False
+
+def test_clasificare_hibiscus():
+    cul = bflori.clasificare_hibiscus()
+    if cul == "sabdariffa" :
+        assert True
+    else: 
+        assert False             

@@ -20,5 +20,13 @@ def anotimp_ghiocel():
 def clasificare_ghiocel():
     return("parfumat")
     
-
+def culoare_hibiscus():
+    return("roz")
+   
+    
+def anotimp_hibiscus():
+    return("primavara")
+    
+def clasificare_hibiscus():
+    return("sabdariffa")
 

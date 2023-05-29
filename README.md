@@ -1,6 +1,7 @@
 Proiect site flori - Hibiscus
 
 Prima data am creat fisierul git si am instalat git-ul:
+
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93872614/adfa8de0-ffe5-4d18-a829-1c41a792ba5a)
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93872614/c5451353-8fd2-45bf-89eb-59a064684674)
 Am clonat git-ul si am instalat gedit:

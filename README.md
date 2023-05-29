@@ -1,4 +1,4 @@
-Proiect site flori - Hibiscus
+Proiect flori - Hibiscus
 
 Prima data am creat fisierul git si am instalat git-ul:
 

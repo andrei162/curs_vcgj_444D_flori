@@ -24,6 +24,7 @@ Am instalat Docker:
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93872614/f88633c7-81a0-43cc-8a92-51b82aa80d21)
 Am efectuat manual testele cu ajutorul comenzii:
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93872614/72fdbc47-4876-49a1-a12b-d818b0459711)
+
 Pentru a porni o sesiune si a putea accesa localhost:8020 am adaugat comanda:
 ![image](https://github.com/andrei162/curs_vcgj_444D_flori/assets/93872614/05ce04a0-4348-402a-a5dc-497eb2f98878)
 Si am avut parte de o eroare si nu am putut accesa localhost:8020:

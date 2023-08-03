@@ -38,3 +38,4 @@ jobs:
       working-directory: ./app
       run: |
         python3 -m pytest -v
+        pylint $(git ls-files '*.py')

@@ -39,7 +39,7 @@ jobs:
       working-directory: ./app
       run: |
         python3 -m pytest -v
-    -name: Build Docker image
+    - name: Build Docker image
       run: |
       sudo docker build -t 444d_flori:v01 .
     - name: Verify and grade code using Pylint

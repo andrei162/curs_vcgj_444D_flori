@@ -39,5 +39,8 @@ jobs:
       working-directory: ./app
       run: |
         python3 -m pytest -v
+    - name: Verify and grade code using Pylint
+      working-directory: ./app
+      run: |
         pylint --version
         pylint $(git ls-files '*.py')

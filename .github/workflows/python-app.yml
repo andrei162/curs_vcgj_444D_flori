@@ -54,5 +54,5 @@ jobs:
       - name: Verify and grade code using Pylint
         working-directory: ./app
         run: |
-          sudo pylint --version
-          sudo pylint $(git ls-files '*.py')
+          pylint --version
+          pylint $(git ls-files '*.py')

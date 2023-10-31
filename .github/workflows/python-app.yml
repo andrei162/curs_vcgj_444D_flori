@@ -4,6 +4,7 @@
 name: Python application
 
 on:
+  workflow_dispatch:
   push:
     branches: ["main"]
   pull_request:
@@ -39,7 +40,7 @@ jobs:
           python3 -m pytest -v
       - name: Build Docker image
         run: |
-          sudo docker build -t 444d_flori:v01
+          sudo docker build -t 444d_flori:v01        
 
   code_test:
     runs-on: ubuntu-latest
